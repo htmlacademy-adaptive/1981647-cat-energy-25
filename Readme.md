@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 - Студент: [Polina](https://up.htmlacademy.ru/adaptive/25/user/1981647).
-- Наставник: [Сергей Артёмов] (https://github.com/firefoxic).
+- Наставник: [Сергей Артёмов](https://htmlacademy.ru/profile/firefoxic).
 
 ---
 
