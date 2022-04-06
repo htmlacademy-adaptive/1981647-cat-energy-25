@@ -41,11 +41,11 @@
       <p class="profile__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     </div>
-    <section class="profile-form">
+    <div class="profile-form">
       <form class="profile-form" action="https://echo.htmlacademy.ru">
         <div class="page-centerer">
           <fieldset class="profile-form__group">
-            <legend class="visually-hidden">Pet's information</legend>
+            <legend class="visually-hidden">Информация о питомце</legend>
             <label for="name" class="profile-form__label">Имя:<sup>*</sup>
               <input class="profile-form__input profile-form__input--name" type="text" id="name" placeholder="Барсик" required>
             </label>
@@ -84,16 +84,16 @@
           <fieldset class="profile-form__add-ons">
             <legend class="profile-form__legend profile-form__legend-addons">Дополнительно</legend>
             <label class="profile-form__label" for="sugar-sub">сахарозаменитель
-              <input class="profile-form__checkbox" type="checkbox" id="sugar-sub" checked>
+              <input class="profile-form__checkbox" type="checkbox" id="sugar-sub" value="sugar-substitute" name="add-ons" checked>
             </label>
             <label class="profile-form__label" for="water">питьевая вода
-              <input class="profile-form__checkbox" type="checkbox" id="water">
+              <input class="profile-form__checkbox" type="checkbox" id="water" name="add-ons" value="liquid">
             </label>
             <label class="profile-form__label" for="milk">молоко
-              <input class="profile-form__checkbox" type="checkbox" id="milk">
+              <input class="profile-form__checkbox" type="checkbox" id="milk" name="add-on" value="dairy">
             </label>
             <label class="profile-form__label" for="vitamins">витамины
-              <input class="profile-form__checkbox" type="checkbox" id="vitamins">
+              <input class="profile-form__checkbox" type="checkbox" id="vitamins" name="add-ons" value="supplement">
             </label>
             <div class="button-container">
               <button class="profile-form__button button" type="button">отправить заявку</button>
@@ -102,7 +102,7 @@
           </fieldset>
         </div>
       </form>
-    </section>
+    </div>
     <section class="contacts">
       <div class="page__centerer">
         <h2 class="visually-hidden">Наш адрес</h2>
