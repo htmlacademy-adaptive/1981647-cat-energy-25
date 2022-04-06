@@ -1,33 +1,8 @@
-<!DOCTYPE html>
-<html class="page" lang="ru">
+{% set pageId = 1 %}
+{% set permalink = pages[pageId].path %}
+{% extends "./templates/_layout.twig" %}
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Energy</title>
-</head>
-
-<body class="page__body">
-  <header class="catalog-header main-header">
-    <a href="#" class="main-header__logo-icon">
-      <img class="main-header__logo-icon-img" src="images/logo-mobile.png" width="34" height="38" alt="Cat Energy logo.">
-      <img class="main-header__logo-title-img" src="images/mobile-logo-text.svg" width="101" height="18" alt="Cat Energy">
-    </a>
-
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
-        <span class="visually-hidden">Открыть меню</span>
-      </button>
-      <div class="main-nav__container">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item "><a href="index.html">Главная</a></li>
-          <li class="site-list__item site-list__item--active"><a href="catalog.html">Каталог Продукции</a></li>
-          <li class="site-list__item"><a href="form.html">Подбор Программы</a></li>
-        </ul>
-      </div>
-    </nav>
-  </header>
+{% block main %}
   <main class="catalog-content">
     <h1 class="catalog-content__title">Каталог продукции</h1>
     <div class="catalog-content__container">
@@ -274,32 +249,4 @@
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="page-centerer">
-      <div class="footer__logo-container">
-        <a href="" class="footer__logo"></a>
-      </div>
-      <div class="footer__social social">
-        <b class="social__title">Давайте дружить!</b>
-        <ul class="footer__social-list">
-          <li class="footer__social-item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
-          </li>
-          <li class="footer__social-item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__copyright">
-      <a class="footer__copyright__text" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy
-      </a>
-      <a class="footer__copyright__link" href="https://htmlacademy.ru/intensive/htmlcss"></a>
-    </div>
-  </footer>
-</body>
-
-</html>
+{% endblock %}
