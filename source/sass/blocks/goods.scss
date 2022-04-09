@@ -1,0 +1,31 @@
+.goods__title {
+  font-family: var(--main-font);
+  font-size: 24px;
+  line-height: 24px;
+  color: var(--primary-color);
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.goods__list {
+  list-style: none;
+  padding: 0;
+}
+
+.goods__item {
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.more-goods__title {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--title-color);
+}
+
+.more-goods__info,
+.more-goods__value {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--description-color);
+}

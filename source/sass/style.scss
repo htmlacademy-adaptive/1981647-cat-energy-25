@@ -1,2 +1,27 @@
 @use "./global/global.scss";
+@use "./global/variables.scss";
+@use "./global/fonts.scss";
 @use "./blocks/button.scss";
+@use "./blocks/main-header.scss";
+@use "./blocks/main-nav__list.scss";
+@use "./blocks/main-header__logo.scss";
+@use "./blocks/main-header__banner.scss";
+@use "./blocks/main-content__title.scss";
+@use "./blocks/main-content__slogan.scss";
+@use "./blocks/main-content__product-img.scss";
+@use "./blocks/programs.scss";
+@use "./blocks/page__centerer.scss";
+@use "./blocks/page.scss";
+@use "./blocks/principles.scss";
+@use "./blocks/motivation.scss";
+@use "./blocks/contacts.scss";
+@use "./blocks/footer.scss";
+@use "./blocks/footer__logo.scss";
+@use "./blocks/footer-social.scss";
+@use "./blocks/footer-copyright.scss";
+@use "./blocks/catalog__title.scss";
+@use "./blocks/catalog__list.scss";
+@use "./blocks/goods.scss";
+@use "./blocks/profile.scss";
+@use "./blocks/form__legend.scss";
+

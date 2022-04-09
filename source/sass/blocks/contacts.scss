@@ -1,0 +1,22 @@
+.contacts__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 26px 20px;
+}
+
+.contacts__advertisement {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+  min-width: 139px;
+}
+
+.contacts__address {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  font-style: normal;
+  line-height: 20px;
+  color: var(--description-color);
+}

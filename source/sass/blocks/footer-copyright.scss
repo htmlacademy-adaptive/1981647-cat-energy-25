@@ -1,0 +1,25 @@
+.footer__copyright__text {
+  display: inline-block;
+  text-decoration: none;
+  font-family: var(--accent-font);
+  font-size: 16px;
+  line-height: 19px;
+  color: #444444;
+}
+
+.footer__copyright__link {
+  display: block;
+  text-decoration: none;
+  background-image: url("../../icons/icon-academy-img.svg");
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 34px;
+}
+
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
