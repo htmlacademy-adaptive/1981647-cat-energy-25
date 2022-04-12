@@ -4,15 +4,24 @@
   line-height: 24px;
   color: var(--primary-color);
   border-bottom: 1px solid #cdcdcd;
+  padding-top: 25px;
+  padding-bottom: 35px;
 }
 
 .goods__list {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .goods__item {
   border-bottom: 1px solid #cdcdcd;
+  padding-bottom: 20px;
+}
+
+.more-goods__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .more-goods__title {
@@ -20,6 +29,7 @@
   font-size: 16px;
   line-height: 16px;
   color: var(--title-color);
+  width: 100%;
 }
 
 .more-goods__info,
@@ -29,3 +39,13 @@
   line-height: 14px;
   color: var(--description-color);
 }
+
+.more-goods__info {
+  width: 70%;
+}
+
+.more-goods__value {
+  width: 30%;
+  margin-right: auto;
+}
+

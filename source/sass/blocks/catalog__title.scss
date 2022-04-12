@@ -1,9 +1,13 @@
-.catalog-title {
+.catalog-content__title {
   font-family: var(--main-font);
   font-size: var(--title-fs);
+  font-weight: 400;
   line-height: var(--title-fs);
   color: var(--primary-color);
   border-top: 1px solid var(--details-color);
+  border-bottom: 1px solid var(--details-color);
   padding-top: 30px;
+  padding-bottom: 40px;
   margin: 0;
+  width: 320px;
 }

@@ -1,3 +1,7 @@
+.contacts--theme {
+  background-color: --bg-color-accent;
+}
+
 .contacts__wrapper {
   display: flex;
   align-items: center;
@@ -19,4 +23,10 @@
   font-style: normal;
   line-height: 20px;
   color: var(--description-color);
+}
+
+.contacts_map {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
