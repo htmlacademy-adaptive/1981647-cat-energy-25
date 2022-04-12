@@ -1,17 +1,15 @@
-@import "./global/global.scss";
-@import "./global/variables.scss";
+@import "./global/media.scss";
 @import "./global/fonts.scss";
+@import "./global/variables.scss";
+@import "./global/global.scss";
+@import "./blocks/page.scss";
 @import "./blocks/button.scss";
+@import "./blocks/visually-hidden.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/main-nav__list.scss";
 @import "./blocks/main-header__logo.scss";
-@import "./blocks/main-header__banner.scss";
-@import "./blocks/main-content__title.scss";
-@import "./blocks/main-content__slogan.scss";
-@import "./blocks/main-content__product-img.scss";
+@import "./blocks/main-content.scss";
 @import "./blocks/programs.scss";
-@import "./blocks/page__centerer.scss";
-@import "./blocks/page.scss";
 @import "./blocks/principles.scss";
 @import "./blocks/motivation.scss";
 @import "./blocks/contacts.scss";
@@ -20,9 +18,10 @@
 @import "./blocks/footer-social.scss";
 @import "./blocks/footer-copyright.scss";
 @import "./blocks/catalog__title.scss";
-@import "./blocks/catalog__list.scss";
+@import "./blocks/catalog.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/catalog__button.scss";
 @import "./blocks/goods.scss";
 @import "./blocks/promotions.scss";
 @import "./blocks/profile.scss";
 @import "./blocks/form__legend.scss";
-

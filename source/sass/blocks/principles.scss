@@ -1,5 +1,5 @@
 .principles__title {
-  font-family: var(--main-font);
+  font-family: var(--accent-font); //changed
   font-size: var(--title-fs);
   line-height: 40px;
   color: var(--primary-color);
@@ -12,7 +12,7 @@
 
 .principles__item {
   position: relative;
-  font-family: var(--accent-font);
+  font-family: var(--main-font); //changed
   font-size: 14px;
   line-height: 18px;
   margin-left: 80px;
@@ -35,17 +35,17 @@
 }
 
 .principles__item--greens::before {
-  background-image: url(../../icons/icon_leaf.svg);
+  background-image: url("../../icons/icon_leaf.svg");
 }
 
 .principles__item--solutable::before {
-  background-image: url(../../icons/icon_glass.svg);
+  background-image: url("../../icons/icon_glass.svg");
 }
 
 .principles__item--silverwear::before {
-  background-image: url(../../icons/icon_eat.svg);
+  background-image: url("../../icons/icon_eat.svg");
 }
 
 .principles__item--clock::before {
-  background-image: url(../../icons/icon_alarm.svg);
+  background-image: url("../../icons/icon_alarm.svg");
 }

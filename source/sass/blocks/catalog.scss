@@ -40,20 +40,12 @@
 }
 
 .catalog__title {
-  font-family: var(--main-font);
+  font-family: var(--accent-font);
   color: var(--title-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   margin-right: 64px;
-}
-
-.stats__info,
-.stats__value {
-  font-family: var(--accent-font);
-  font-size: 12px;
-  line-height: 16px;
-  color: var(--description-color);
 }
 
 .catalog__title--more {
@@ -68,27 +60,3 @@
   line-height: 16px;
   color: var(--description-color);
 }
-
-.catalog-button {
-  font-family: var(--main-font);
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  border: 0;
-  text-decoration: none;
-  display: inline-block;
-  padding: 10px 15px;
-  text-transform: uppercase;
-  background-color: var(--accent-color);
-  color: var(--secondary-color);
-  width: 280px;
-  box-sizing: border-box;
-  text-align: center;
-
-
-  &.--secondary-color {
-    background-color: var(--bg-color-accent);
-    color: var(--description-color);
-  }
-}
-

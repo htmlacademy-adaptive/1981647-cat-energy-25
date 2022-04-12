@@ -1,3 +1,28 @@
-.main-content {
+.main-content__title {
+  font-family: var(--accent-font); //changed
+  font-size: var(--title-fs);
+  font-weight: normal;
+  line-height: 36px;
+  color: var(--secondary-color);
+  padding: 25px 35px;
+  margin: 0;
+}
+
+.main-content__slogan {
+  font-family: var(--accent-font);
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--secondary-color);
+}
+
+.main-content__product-img {
+  display: block;
   margin: 0 auto;
+}
+
+.main-content__banner {
+  background-image: url("../../img/m-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: center;
 }

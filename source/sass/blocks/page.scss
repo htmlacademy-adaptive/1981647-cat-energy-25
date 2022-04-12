@@ -1,5 +1,5 @@
 .page {
-  font-family: var(--main-font);
+  font-family: var(--accent-font); //changed
 }
 
 .page__body {
@@ -8,8 +8,6 @@
   min-width: 320px;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.page__centerer {
+  margin: 0 20px;
 }
