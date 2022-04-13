@@ -1,8 +1,23 @@
 
 .main-header {
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px 17px;
+  width: 320px;
+}
+
+.main-header__logo {
+  text-decoration: none;
+}
+
+.main-header__logo-icon {
+  width: 34px;
+  height: 38px;
+}
+
+.main-header__logo-title-img {
+  width: 101px;
+  height: 18px;
 }
