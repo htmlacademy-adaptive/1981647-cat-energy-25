@@ -18,33 +18,3 @@
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 20px;
 }
-
-.more-goods__container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.more-goods__title {
-  font-family: var(--accent-font);
-  font-size: 16px;
-  line-height: 16px;
-  color: var(--title-color);
-  width: 100%;
-}
-
-.more-goods__info,
-.more-goods__value {
-  font-family: var(--accent-font);
-  font-size: 14px;
-  line-height: 14px;
-  color: var(--description-color);
-}
-
-.more-goods__info {
-  width: 70%;
-}
-
-.more-goods__value {
-  width: 30%;
-  margin-right: auto;
-}
