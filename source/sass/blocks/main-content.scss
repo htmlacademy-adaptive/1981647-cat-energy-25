@@ -4,8 +4,20 @@
   font-weight: normal;
   line-height: 36px;
   color: var(--secondary-color);
-  padding: 25px 35px;
+  padding-top: 27px;
+  padding-bottom: 25px;
   margin: 0;
+  max-width: 250px;
+  box-sizing: content-box;
+
+
+  @media (--not-mobile) {
+    font-size: var(--title-big);
+    line-height: 60px;
+    color: var(--primary-color);
+    max-width: 450px;
+    padding-bottom: 41px;
+  }
 }
 
 .main-content__slogan {
@@ -13,6 +25,14 @@
   font-size: 14px;
   line-height: 14px;
   color: var(--secondary-color);
+  text-transform: uppercase;
+
+  @media (--not-mobile) {
+    font-size: 20px;
+    line-height: 20px;
+    color: var(--primary-color);
+    margin-bottom: 50px;
+  }
 }
 
 .main-content__product-img {
@@ -21,8 +41,38 @@
 }
 
 .main-content__banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: url("../../img/m-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100%;
-  text-align: center;
+
+
+  @media (--not-mobile) {
+    padding-left: 97px;
+    align-items: flex-start;
+    background-image: none;
+    min-height: 800px;
+  }
+}
+
+.main-content__banner-product {
+  @media (--not-mobile) {
+    position: absolute;
+    width: 709px;
+    height: 609px;
+    left: 0;
+    z-index: -1;
+    bottom: 85px;
+  }
+}
+
+.main-content__button-programs {
+  @media (--not-mobile) {
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+  }
 }

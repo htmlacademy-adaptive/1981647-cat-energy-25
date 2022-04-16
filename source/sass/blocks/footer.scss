@@ -1,9 +1,16 @@
 .footer {
   background-color: var(--bg-color-accent);
+}
+
+.footer__container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+
+  @media (--not-mobile) {
+    flex-direction: row;
+    min-width: 708px;
+  }
 }
 
 .footer__logo {
@@ -15,8 +22,16 @@
   padding-bottom: 32px;
 }
 
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
 
-.footer__copyright__text {
+.footer__copyright-text {
   display: inline-block;
   text-decoration: none;
   font-family: var(--accent-font);
@@ -25,7 +40,7 @@
   color: #444444;
 }
 
-.footer__copyright__link {
+.footer__copyright-link {
   display: block;
   text-decoration: none;
   background-image: url("../../icons/icon-academy-img.svg");
@@ -34,10 +49,3 @@
   height: 34px;
 }
 
-.footer__copyright {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding-top: 22px;
-  padding-bottom: 22px;
-}

@@ -10,4 +10,13 @@
 
 .page__centerer {
   margin: 0 20px;
+
+  @media (--not-mobile) {
+    margin: 0 30px;
+  }
+
+  @media (--desktop) {
+    margin: auto;
+    width: 1220px;
+  }
 }
