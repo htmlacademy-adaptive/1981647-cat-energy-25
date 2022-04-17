@@ -8,10 +8,19 @@
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
+
+  @media (--not-mobile) {
+    border: none;
+    padding: 0;
+  }
 }
 
 .footer-social {
   width: 100%;
+
+  @media (--not-mobile) {
+    width: auto;
+  }
 }
 
 .footer-social__item {
