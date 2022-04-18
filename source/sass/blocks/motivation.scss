@@ -1,5 +1,9 @@
 .motivation {
   background-color: #eaeaea;
+
+  @media (--not-mobile) {
+    background-color: var(--secondary-color);
+  }
 }
 
 .motivation__title {
@@ -8,25 +12,45 @@
   line-height: 40px;
   color: var(--primary-color);
   padding-top: 25px;
+
+  @media (--not-mobile) {
+    font-size: var(--title-big);
+    line-height: 60px;
+    font-weight: 400;
+  }
 }
 
 .motivation__testimony {
-  font-family: var(--accent-font);
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
+
+  @media (--not-mobile) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .motivation__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (--not-mobile) {
+    justify-content: flex-start;
+  }
 }
 
 .motivation__name,
 .motivation__value {
-  font-family: var(--accent-font); //changed
+  font-family: var(--accent-font);
   font-size: 14px;
   line-height: 20px;
+
+  @media (--not-mobile) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .motivation__item--badge {
@@ -34,10 +58,15 @@
 
   &:first-child {
     margin-right: 30px;
+
+    @media (--not-mobile) {
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 
   .motivation__value {
-    font-family: var(--accent-font); //changes
+    font-family: var(--accent-font);
     font-size: 24px;
     line-height: 24px;
     margin: 0;
@@ -47,11 +76,16 @@
     min-width: 124px;
     text-align: center;
     margin-left: 5px;
+
+    @media (--not-mobile) {
+      font-size: 30px;
+      line-height: 37px;
+    }
   }
 
   .motivation__name {
     position: absolute;
-    font-family: var(--main-font); //changes
+    font-family: var(--main-font);
     font-size: 12px;
     line-height: 12px;
     text-align: center;
@@ -60,6 +94,12 @@
     transform: translateX(-50%);
     background-color: #eaeaea;
     margin-bottom: 20px;
+
+    @media (--not-mobile) {
+      font-size: 14px;
+      line-height: 14px;
+      background-color: var(--secondary-color);
+    }
   }
 }
 
@@ -68,10 +108,18 @@
   justify-content: center;
   width: 100%;
   margin-top: 34px;
+
+  @media (--not-mobile) {
+    flex-direction: column;
+    margin-left: 167px;
+    width: auto;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
 }
 
 .motivation__button {
-  font-family: var(--accent-font); //changed
+  font-family: var(--accent-font);
   font-size: 16px;
   line-height: 20px;
   border: none;

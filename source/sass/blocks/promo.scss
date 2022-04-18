@@ -1,0 +1,25 @@
+.promo {
+  position: relative;
+  padding-bottom: 10px;
+  min-height: 478px;
+  color: #ffffff;
+  text-align: center;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 250px;
+    background-image: url("../../img/m-banner.jpg"), linear-gradient(#65a83d, #62a53b);
+    background-size: contain, 100%;
+    background-position: top center;
+    background-repeat: no-repeat;
+    z-index: -1;
+
+    @media (--not-mobile) {
+      display: none;
+    }
+  }
+}

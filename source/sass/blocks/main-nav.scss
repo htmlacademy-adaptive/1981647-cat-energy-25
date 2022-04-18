@@ -1,11 +1,11 @@
 .main-nav {
-  @media (min-width: --not-mobile) {
+  @media (--not-mobile) {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 440px;
   }
 
-  @media (min-width: --desktop) {
+  @media (--desktop) {
     width: 478px;
   }
 }
@@ -65,7 +65,7 @@
 }
 
 .main-nav__list {
-  display: none;
+  // display: none;
   position: absolute;
   flex-direction: column;
   margin: 0;

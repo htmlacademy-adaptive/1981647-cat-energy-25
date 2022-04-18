@@ -3,17 +3,21 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="main-content">
-  <div class="main-content__banner">
-    <h1 class="main-content__title">Функциональное питание для котов</h1>
-    <p class="main-content__slogan">Занялся собой? Займись котом!</p>
-    <picture class="main-content__banner-product">
-      <source media="(min-width: 1280px)" srcset="img/index-can-desktop.png">
-      <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg">
-      <img class="main-content__product-img" src="img/index-can-mobile.png" alt="Банка корма для котов." />
-    </picture>
-    <a href="#" class="main-content__button-programs button">Подобрать Программу</a>
-  </div>
+<main class="main">
+  <section class="main-promo promo">
+    <div class="page__centerer">
+      <div class="main-promo__container">
+        <h1 class="main-promo__title">Функциональное питание для котов</h1>
+        <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
+        <picture class="main-promo__banner-product">
+          <source media="(min-width: 1280px)" srcset="img/index-can-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg">
+          <img class="main-promo__product-img" src="../img/index-can-mobile.png" alt="Банка корма для котов." width="280" height="270" />
+        </picture>
+        <a href="#" class="main-promo__button-programs button">Подобрать Программу</a>
+      </div>
+    </div>
+  </section>
   <section class="programs">
     <div class="page__centerer">
       <h2 class="visually-hidden">Доступные программы</h2>
@@ -76,7 +80,7 @@
     </div>
   </section>
   <section class="motivation">
-    <div class="page__centerer">
+    <div class="motivation__content page__centerer">
       <h2 class="motivation__title">Живой Пример</h2>
       <p class="motivation__testimony">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
@@ -105,8 +109,8 @@
         </div>
       </dl>
     </div>
-    <div class="page__centerer">
-      <div class="motivation__example-container">
+    <div class="motivation__example-container">
+      <div class="page__centerer">
         <figure class="motivation__slider">
           <figcaption class="visually-hidden">Результаты До и После.</figcaption>
           <img class="motivation__before-img" src="img/before-cat.png" alt="Fat cat.">
