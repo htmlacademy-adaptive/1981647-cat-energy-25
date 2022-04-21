@@ -4,7 +4,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 0 17px;
-  // min-width: 320px;
 
   @media (--not-mobile) {
     width: auto;
@@ -21,6 +20,24 @@
 
 .main-header__logo {
   text-decoration: none;
+}
+
+.logo__image {
+  display: block;
+
+  @media (--not-mobile) {
+    width: 171px;
+    height: 52px;
+  }
+
+  @media (--desktop) {
+    width: 202px;
+    height: 60px;
+  }
+
+  img {
+    width: 100%;
+  }
 }
 
 .main-header__title {

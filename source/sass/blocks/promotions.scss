@@ -1,3 +1,10 @@
+.promotions {
+  @media (--not-mobile) {
+    display: flex;
+    width: 100%;
+  }
+}
+
 .promotions__container {
   display: flex;
   flex-direction: column;
@@ -6,6 +13,18 @@
   background-size: cover;
   padding: 58px 60px 43px;
   margin-top: 35px;
+
+  @media (--not-mobile) {
+    flex-direction: row;
+    align-items: center;
+    min-width: 708px;
+    width: 100%;
+    margin-top: 65px;
+  }
+
+  @media (--desktop) {
+    width: 245px;
+  }
 }
 
 .promotions__icon {
@@ -14,13 +33,21 @@
   width: 78px;
   height: 80px;
   margin: 0 auto;
+
+  @media (--not-mobile) {
+    width: 70%;
+  }
 }
 
 .promotions__text {
-  font-family: var(--accent-font);
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 18px;
   color: var(--secondary-color);
   text-align: center;
   margin-top: 48px;
+
+  @media (--not-mobile) {
+    width: 30%;
+  }
 }

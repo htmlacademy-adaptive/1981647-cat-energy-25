@@ -2,4 +2,15 @@
   width: 280px;
   box-sizing: border-box;
   text-align: center;
+
+  @media (--not-mobile) {
+    max-width: 632px;
+    width: 100%;
+    font-size: 16px;
+  }
+
+  @media (--desktop) {
+    width: 244px;
+    height: 40px;
+  }
 }

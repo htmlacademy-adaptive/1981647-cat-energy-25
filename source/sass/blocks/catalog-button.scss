@@ -1,5 +1,5 @@
 .catalog-button {
-  font-family: var(--main-font); //changed
+  font-family: var(--accent-font); //changed
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -18,5 +18,19 @@
   &--secondary-color {
     background-color: var(--bg-color-accent);
     color: var(--description-color);
+
+    @media (--not-mobile) {
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
+
+  @media (--not-mobile) {
+    width: 248px;
+    align-self: center;
+  }
+
+  @media (--desktop) {
+    width: 168px;
   }
 }

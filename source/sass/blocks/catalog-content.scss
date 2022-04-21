@@ -1,5 +1,5 @@
 .catalog-content__title {
-  font-family: var(--accent-font); //changed
+  font-family: var(--accent-font);
   font-size: var(--title-fs);
   font-weight: 400;
   line-height: var(--title-fs);
@@ -9,5 +9,10 @@
   padding-top: 30px;
   padding-bottom: 40px;
   margin: 0;
-  width: 320px;
+
+  @media (--not-mobile) {
+    font-size: var(--title-big);
+    line-height: 60px;
+    border: none;
+  }
 }

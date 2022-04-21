@@ -1,7 +1,27 @@
 .stats__info,
 .stats__value {
-  font-family: var(--accent-font);
+  font-family: var(--main-font);
   font-size: 12px;
   line-height: 16px;
   color: var(--description-color);
+
+  @media (--not-mobile) {
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0;
+    padding-top: 9px;
+    padding-bottom: 9px;
+  }
+}
+
+.stats__info {
+  text-align: left;
+  // @media (--not-mobile) {
+  // }
+}
+
+.stats__value {
+  text-align: right;
+  // @media (--not-mobile) {
+  // }
 }

@@ -8,6 +8,13 @@
   padding-top: 27px;
   padding-bottom: 37px;
   margin: 0;
+
+  @media (--not-mobile) {
+    font-size: var(--title-big);
+    line-height: 60px;
+    font-weight: 400;
+    margin-left: 40px;
+  }
 }
 
 .profile__subtitle {
@@ -19,4 +26,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 35px;
+  max-width: 250px;
+
+  @media (--not-mobile) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    margin-left: 40px;
+    max-width: 380px;
+  }
 }

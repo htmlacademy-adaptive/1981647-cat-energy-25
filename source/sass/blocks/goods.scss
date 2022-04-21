@@ -1,11 +1,19 @@
 .goods__title {
   font-family: var(--accent-font);
   font-size: 24px;
+  font-weight: 400;
   line-height: 24px;
   color: var(--primary-color);
   border-bottom: 1px solid #cdcdcd;
   padding-top: 25px;
   padding-bottom: 35px;
+
+  @media (--not-mobile) {
+    font-size: var(--title-fs);
+    line-height: 36px;
+    border-bottom: none;
+    padding-bottom: 80px;
+  }
 }
 
 .goods__list {
@@ -17,4 +25,25 @@
 .goods__item {
   border-bottom: 1px solid #cdcdcd;
   padding-bottom: 20px;
+
+  @media (--not-mobile) {
+    display: flex;
+    border: 1px solid #cdcdcd;
+    border-bottom: none;
+  }
+
+  @media (--desktop) {
+    flex-direction: row;
+    max-width: 896px;
+    width: 100%;
+    min-height: 72px;
+  }
+
+  &:last-child {
+    @media (--not-mobile) {
+      border-bottom: none;
+      border-left: none;
+      border-right: none;
+    }
+  }
 }
