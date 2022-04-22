@@ -3,6 +3,10 @@
     display: flex;
     width: 100%;
   }
+
+  @media (--desktop) {
+    width: auto;
+  }
 }
 
 .promotions__container {
@@ -20,10 +24,14 @@
     min-width: 708px;
     width: 100%;
     margin-top: 65px;
+    background-image: url("../../img/bg-promotions-tablet.jpg");
+    margin-bottom: 78px;
   }
 
   @media (--desktop) {
     width: 245px;
+    min-width: auto;
+    margin-top: 0;
   }
 }
 
@@ -42,6 +50,7 @@
 .promotions__text {
   font-family: var(--main-font);
   font-size: 16px;
+  font-weight: 400;
   line-height: 18px;
   color: var(--secondary-color);
   text-align: center;
@@ -49,5 +58,8 @@
 
   @media (--not-mobile) {
     width: 30%;
+    line-height: 20px;
+    text-align: left;
+    margin: 0;
   }
 }

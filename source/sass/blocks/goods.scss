@@ -1,3 +1,10 @@
+.goods {
+  @media (--desktop) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
 .goods__title {
   font-family: var(--accent-font);
   font-size: 24px;
@@ -14,12 +21,21 @@
     border-bottom: none;
     padding-bottom: 80px;
   }
+
+  @media (--desktop) {
+    width: 100%;
+  }
 }
 
 .goods__list {
   list-style: none;
   padding: 0;
   margin: 0;
+
+  @media (--desktop) {
+    margin-right: 79px;
+    flex-grow: 2;
+  }
 }
 
 .goods__item {
@@ -29,7 +45,6 @@
   @media (--not-mobile) {
     display: flex;
     border: 1px solid #cdcdcd;
-    border-bottom: none;
   }
 
   @media (--desktop) {
@@ -37,13 +52,5 @@
     max-width: 896px;
     width: 100%;
     min-height: 72px;
-  }
-
-  &:last-child {
-    @media (--not-mobile) {
-      border-bottom: none;
-      border-left: none;
-      border-right: none;
-    }
   }
 }

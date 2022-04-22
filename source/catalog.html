@@ -220,8 +220,8 @@
       </li>
     </ul>
   </div>
-  <section class="goods">
-    <div class="page__centerer">
+  <section class="goods page__centerer">
+    {# <div class="page__centerer"> #}
       <h2 class="goods__title">Дополнительные товары</h2>
       <ul class="goods__list">
         <li class="goods__item more-goods">
@@ -264,20 +264,19 @@
             <a href="#" class="goods-button button">Заказать</a>
           </div>
         </li>
-        <li class="goods__item promotions">
-          <div class="promotions">
-            <div class="promotions__container">
-              <h2 class="visually-hidden">Наши акции</h2>
-              <div class="promotions__icon"></div>
-              <p class="promotions__text">Закажите все и получите чехол для кота в подарок!</p>
-            </div>
-          </div>
-        </li>
       </ul>
-    </div>
+      <div class="promotions">
+        <div class="promotions__container page">
+          <h2 class="visually-hidden">Наши акции</h2>
+          <div class="promotions__icon"></div>
+          <p class="promotions__text">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
+      {#
+    </div> #}
   </section>
-  <section class="contacts contact--theme page__centerer">
-    <div class="contacts__wrapper">
+  <section class="contacts contact--theme">
+    <div class="contacts__wrapper page__centerer">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__informative">
         <p class="contacts__advertisement">

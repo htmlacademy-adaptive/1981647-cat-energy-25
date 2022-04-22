@@ -12,8 +12,8 @@
   </div>
   <section class="form-profile page__centerer">
     <h2 class="visually-hidden">Форма Заявок</h2>
-    <form class="form" action="https://echo.htmlacademy.ru">
-      {# <div class="page__centerer"> #}
+    <form class="form page__centerer" action="https://echo.htmlacademy.ru">
+      <div class="form__group-wrapper">
         <fieldset class="form__group form__legend">
           <legend class="visually-hidden">Информация о питомце</legend>
           <label for="name" class="form__label form__label--sb">Имя:<sup>*</sup>
@@ -28,18 +28,20 @@
         </fieldset>
         <fieldset class="form__filter-radio form__legend--border">
           <legend class="visually-hidden">Нужды питомца</legend>
-          <label class="form__label" for="weight-loss">
+          <label class="form__label form__label--wl" for="weight-loss">
             <input class="form__radio" type="radio" name="pet-needs" id="weight-loss" checked>Похудение
           </label>
           <label class="form__label" for="weight-gain">
             <input class="form__radio" type="radio" name="pet-needs" id="weight-gain">Набор Массы
           </label>
-          <label class="form__label" for="doubts">
+          <label class="form__label form__label--doubts" for="doubts">
             <input class="form__radio" type="radio" name="pet-needs" id="doubts">Не знаю (Нужен ваш совет)
           </label>
         </fieldset>
-        <fieldset class="form__contacts form__legend">
-          <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
+      </div>
+      <fieldset class="form__contacts form__legend">
+        <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
+        <div class="form__group-wrapper">
           <label class="form__label form__label--sb" for="email">E-mail:<sup>*</sup>
             <input class="form__input form__input--email" type="number" id="email" placeholder="kuklachev@gmail.com" required>
             <span class="form__icon-tel"></span>
@@ -48,36 +50,36 @@
             <input class="form__input form__input--phone" type="tel" id="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" placeholder="8 (960) 900-60-90" required>
             <span class="form__icon-tel"></span>
           </label>
-        </fieldset>
-        <fieldset class="form__comments form__legend">
-          <legend class="form__legend form__legend-comment">Комментарий</legend>
-          <textarea class="form__feedback" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
-        </fieldset>
-        <fieldset class="form__add-ons form__legend">
-          <legend class="form__legend form__legend-addons">Дополнительно</legend>
-          <label class="form__label" for="sugar-sub">
-            <input class="form__checkbox" type="checkbox" id="sugar-sub" value="sugar-substitute" name="add-ons" checked>сахарозаменитель
-          </label>
-          <label class="form__label" for="water">
-            <input class="form__checkbox" type="checkbox" id="water" name="add-ons" value="liquid">питьевая вода
-          </label>
-          <label class="form__label" for="milk">
-            <input class="form__checkbox" type="checkbox" id="milk" name="add-on" value="dairy">молоко
-          </label>
-          <label class="form__label" for="vitamins">
-            <input class="form__checkbox" type="checkbox" id="vitamins" name="add-ons" value="supplement">витамины
-          </label>
-          <div class="button-container">
-            <button class="form__button button" type="button">отправить заявку</button>
-            <span class="form__icon-required">* — Обязательные поля</span>
-          </div>
-        </fieldset>
-        {#
-      </div> #}
+        </div>
+      </fieldset>
+      <fieldset class="form__comments form__legend">
+        <legend class="form__legend form__legend-comment">Комментарий</legend>
+        <textarea class="form__feedback" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
+      </fieldset>
+      <fieldset class="form__add-ons form__legend">
+        <legend class="form__legend form__legend-addons">Дополнительно</legend>
+        <label class="form__label" for="sugar-sub">
+          <input class="form__checkbox" type="checkbox" id="sugar-sub" value="sugar-substitute" name="add-ons" checked>сахарозаменитель
+        </label>
+        <label class="form__label" for="water">
+          <input class="form__checkbox" type="checkbox" id="water" name="add-ons" value="liquid">питьевая вода
+        </label>
+        <label class="form__label" for="milk">
+          <input class="form__checkbox" type="checkbox" id="milk" name="add-on" value="dairy">молоко
+        </label>
+        <label class="form__label" for="vitamins">
+          <input class="form__checkbox" type="checkbox" id="vitamins" name="add-ons" value="supplement">витамины
+        </label>
+        <div class="button-container">
+          <button class="form__button button" type="button">отправить заявку</button>
+          <span class="form__icon-required">* — Обязательные поля</span>
+        </div>
+      </fieldset>
+
     </form>
   </section>
-  <section class="contacts contacts--theme page__centerer">
-    <div class="contacts__wrapper">
+  <section class="contacts contact--theme">
+    <div class="contacts__wrapper page__centerer">
       <h2 class="visually-hidden">Наш адрес</h2>
       <div class="contacts__informative">
         <p class="contacts__advertisement">
@@ -89,7 +91,7 @@
       </address>
     </div>
     <div class="contacts__location">
-      <img class="contacts__map" src="img/location.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362" />
+      <iframe class="contacs__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sus!4v1650547930435!5m2!1sen!2sus" style="border:0;" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 </main>
