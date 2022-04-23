@@ -1,0 +1,17 @@
+.logo__image {
+  display: block;
+
+  @media (--not-mobile) {
+    width: 171px;
+    height: 52px;
+  }
+
+  @media (--desktop) {
+    width: 202px;
+    height: 60px;
+  }
+
+  img {
+    width: 100%;
+  }
+}

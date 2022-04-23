@@ -22,24 +22,6 @@
   text-decoration: none;
 }
 
-.logo__image {
-  display: block;
-
-  @media (--not-mobile) {
-    width: 171px;
-    height: 52px;
-  }
-
-  @media (--desktop) {
-    width: 202px;
-    height: 60px;
-  }
-
-  img {
-    width: 100%;
-  }
-}
-
 .main-header__title {
   display: block;
   height: 19px;
@@ -47,4 +29,9 @@
   @media (--not-mobile) {
     display: none;
   }
+}
+
+.main-header__logo-text {
+  width: 101px;
+  height: 19px;
 }
