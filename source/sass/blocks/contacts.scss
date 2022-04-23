@@ -6,6 +6,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
 
   @media (--not-mobile) {
     padding-top: 55px;
@@ -25,6 +27,7 @@
   @media (--not-mobile) {
     font-size: 20px;
     line-height: 26px;
+    margin: 0;
   }
 }
 
@@ -42,23 +45,15 @@
   }
 }
 
-.contacts__location {
-  position: relative;
-  min-height: 362px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .contacts__map {
-  position: relative;
   display: block;
   width: 100vw;
   min-width: 320px;
   border: none;
   height: 362px;
-  // display: block;
-  // max-width: 100%;
-  // width: 100%;
-  // height: 100%;
-  // object-fit: cover;
+
+  @media (--not-mobile) {
+    min-height: 400px;
+    width: 100%;
+  }
 }
