@@ -3,11 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0 17px;
+  padding: 10px 20px 17px;
+  flex-wrap: wrap;
 
   @media (--not-mobile) {
     width: auto;
     flex-direction: row;
+    padding: 25px 20px;
   }
 
   @media (--desktop) {
@@ -24,7 +26,6 @@
 
 .main-header__title {
   display: block;
-  height: 19px;
 
   @media (--not-mobile) {
     display: none;
@@ -33,5 +34,6 @@
 
 .main-header__logo-text {
   width: 101px;
-  height: 19px;
+  height: auto;
+  display: block;
 }

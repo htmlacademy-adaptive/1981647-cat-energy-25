@@ -2,15 +2,15 @@ export default {
   "pages": [
     {
       "path": "index.html",
-      "name": "Главная"
+      "name": "Главная",
     },
     {
       "path": "catalog.html",
-      "name": "Каталог продукции"
+      "name": "Каталог продукции",
     },
     {
       "path": "form.html",
-      "name": "Подбор программы"
-    }
-  ]
+      "name": "Подбор программы",
+    },
+  ],
 }

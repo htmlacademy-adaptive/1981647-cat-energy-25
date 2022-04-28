@@ -1,7 +1,7 @@
 .button {
   background-color: var(--accent-color);
   font-family: var(--accent-font);
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   border: none;
@@ -10,4 +10,13 @@
   padding: 14px 70px;
   color: var(--secondary-color);
   text-transform: uppercase;
+
+  &:hover {
+    background-color: rgb(94, 170, 47);
+  }
+
+  &:active {
+    background-color: rgb(94, 170, 47);
+    color: rgba(255, 255, 255, 0.3);
+  }
 }

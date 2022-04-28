@@ -89,6 +89,18 @@
   @media (--desktop) {
     margin-bottom: 20px;
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+  }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+  }
 }
 
 .form__filter-radio {
@@ -166,3 +178,5 @@
     height: 52px;
   }
 }
+
+
