@@ -104,6 +104,7 @@
 
   @media (--desktop) {
     width: 478px;
+    background-color: transparent;
   }
 }
 
@@ -167,21 +168,45 @@
     font-weight: 400;
     line-height: 24px;
   }
+
+  @media (--desktop) {
+    color: var(--secondary-color);
+  }
 }
 
-.main-nav--nojs {
-  .main-nav__toggle {
-    display: none;
-  }
+.main-header--no-js {
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 
-  .main-nav__list {
-    position: static;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
+  @media (--mobile) {
+    .main-nav__toggle {
+      display: none;
+    }
 
-  .main-header__title {
-    margin-left: 55px;
+    .main-nav {
+      width: 100%;
+    }
+
+    .main-nav__list {
+      position: static;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .main-header__logo {
+      position: absolute;
+      top: 10px;
+      left: 19px;
+    }
+
+    .main-header__title {
+      padding: 19px 20px;
+    }
+
+    .main-header__logo-text {
+      width: 119px;
+    }
   }
 }

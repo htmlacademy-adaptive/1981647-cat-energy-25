@@ -69,6 +69,11 @@
       line-height: 280px;
       color: #f2f2f2;
       z-index: -1;
+
+      @media (--desktop) {
+        top: 0;
+        right: -46px;
+      }
     }
   }
 }

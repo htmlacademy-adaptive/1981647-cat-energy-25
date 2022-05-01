@@ -13,10 +13,31 @@
   }
 
   @media (--desktop) {
+    position: relative;
     display: flex;
     flex-direction: row;
     width: 1226px;
     margin-left: auto;
+    padding-top: 55px;
+    padding-left: 10px;
+    padding-right: 0;
+  }
+
+  &::after {
+    @media (--desktop) {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 697px;
+      background-image: url("../../img/m-banner.jpg"), linear-gradient(#65a83d, #62a53b);
+      background-repeat: no-repeat;
+      background-size: auto 720px;
+      background-position-x: right;
+      z-index: -1;
+      background-color: #68b738;
+    }
   }
 }
 

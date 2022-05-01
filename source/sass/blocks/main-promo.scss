@@ -31,12 +31,13 @@
     line-height: 60px;
     color: var(--primary-color);
     max-width: 450px;
-    padding-bottom: 20px;
+    padding-bottom: 34px;
     padding-top: 45px;
   }
 
   @media (--desktop) {
-    padding-top: 110px;
+    padding-top: 87px;
+    padding-bottom: 40px;
   }
 }
 
@@ -46,6 +47,7 @@
   line-height: 14px;
   color: var(--secondary-color);
   text-transform: uppercase;
+  margin-top: 0;
 
   @media (--not-mobile) {
     font-size: 20px;
@@ -66,8 +68,8 @@
   }
 
   @media (--desktop) {
-    top: 0;
-    left: 507px;
+    top: -55px;
+    left: 457px;
     width: 552px;
     height: 499px;
   }

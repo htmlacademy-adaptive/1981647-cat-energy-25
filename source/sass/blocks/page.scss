@@ -9,14 +9,14 @@
 }
 
 .page__centerer {
-  padding: 0 20px;
+  margin-inline: 20px;
 
   @media (--not-mobile) {
-    padding: 0 30px;
+    margin-inline: 30px;
   }
 
   @media (--desktop) {
-    padding: auto;
-    // width: 1220px;
+    margin-inline: auto;
+    width: 1220px;
   }
 }
