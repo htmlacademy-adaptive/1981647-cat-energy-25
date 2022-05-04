@@ -1,4 +1,4 @@
-<header class="main-header page__centerer main-header--no-js">
+<header class="main-header page__centerer main-header--no-js {{ permalink=='index.html' ? 'main-header--index' : '' }}">
   <a class="main-header__logo" href="index.html" {% if permalink=="index.html" %}aria-current="page" {% endif %}>
     <picture>
       <source media="(min-width: 1280px)" srcset="../img/logo-desktop.svg">
@@ -18,7 +18,7 @@
     </button>
     <ul class="main-nav__list">
       {% for page in pages %}
-      <li class="main-nav__item {{ permalink==page.path ? 'main-nav__item--current' : '' }}">
+      <li class="main-nav__item {{ permalink==page.path ? 'main-nav__item--current' : '' }} {{ permalink=='index.html' ? 'main-nav__item--index' : '' }}">
         <a class="main-nav__link" href="{{ page.path }}" {% if permalink==page.path %} aria-current="page" {% endif %}>{{ page.name }}</a>
       </li>
       {% endfor %}

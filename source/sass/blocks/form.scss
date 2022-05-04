@@ -5,8 +5,8 @@
   }
 
   @media (--desktop) {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -22,13 +22,12 @@
   width: 100%;
 
   @media (--not-mobile) {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
   }
 }
 
 .form__legend {
-  font-family: var(--accent-font); //changed
+  font-family: var(--accent-font);
   font-size: 24px;
   line-height: 26px;
   color: var(--primary-color);
@@ -38,14 +37,24 @@
 
   &--contacts {
     padding-top: 26px;
-    // padding-bottom: 35px;
+
+    @media (--desktop) {
+      font-size: var(--title-fs);
+      line-height: 36px;
+      padding-top: 44px;
+      padding-bottom: 63px;
+    }
+  }
+
+  @media (--desktop) {
+    margin-bottom: 0;
   }
 }
 
 .form__label,
 .form__input,
 .form__feedback {
-  font-family: var(--accent-font); //changed
+  font-family: var(--accent-font);
   font-size: 16px;
   line-height: 18px;
   color: var(--description-color);
@@ -64,6 +73,72 @@
   width: 100%;
   white-space: nowrap;
   align-items: center;
+
+  @media (--desktop) {
+    margin-bottom: 0;
+  }
+}
+
+.form__label--radio {
+  display: grid;
+  grid-template-columns: 1.5em auto;
+  gap: 15px;
+
+
+  @media (--not-mobile) {
+    grid-template-columns: 6% auto;
+    gap: 20px;
+  }
+}
+
+.form__radio {
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #ffffff;
+  font: inherit;
+  color: currentcolor;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--form-control-color);
+  border-radius: 50%;
+  margin-bottom: 18px;
+  transform: translateY(15%);
+  display: grid;
+  place-content: center;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &::before {
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--accent-color);
+    background-color: #68b738;
+
+    @media (--not-mobile) {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
+
+  @media (--not-mobile) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:focus {
+    outline: max(2px, 0.15em) solid currentcolor;
+    outline-offset: max(2px, 0.15em);
+  }
 }
 
 .form__contacts {
@@ -85,6 +160,7 @@
   padding-bottom: 13px;
   width: 100%;
   margin-left: 15px;
+  transform: translateY(15%);
 
   @media (--desktop) {
     margin-bottom: 20px;
@@ -120,14 +196,9 @@
   }
 
   @media (--desktop) {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 69px;
+    margin: 0;
+    padding: 0;
   }
-}
-
-.form__radio {
-  margin-bottom: 18px;
 }
 
 .form__feedback {
@@ -159,9 +230,55 @@
 }
 
 .form__icon-required {
-  font-family: var(--main-font); //changed
+  font-family: var(--main-font);
   font-size: 14px;
   line-height: 16px;
+}
+
+.form__label-checkbox {
+  display: grid;
+  grid-template-columns: 2em auto;
+  gap: 19px;
+}
+
+.form__checkbox {
+  appearance: none;
+  /* For iOS < 15 to remove gradient background */
+  background-color: #ffffff;
+  font: inherit;
+  color: currentcolor;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--form-control-color);
+  display: grid;
+  place-content: center;
+
+  @media (--not-mobile) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &::before {
+    content: "";
+    width: 18px;
+    height: 14px;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--accent-color);
+    background-color: #68b738;
+    transform-origin: bottom left;
+    clip-path: polygon(3% 36%, 0 43%, 47% 107%, 71% 68%, 107% 0, 45% 93%);
+
+    @media (--not-mobile) {
+      width: 24px;
+      height: 19px;
+    }
+  }
+
+  &:checked::before {
+    transform: scale(1);
+  }
 }
 
 .form__button {

@@ -13,7 +13,6 @@
   }
 
   @media (--desktop) {
-    position: relative;
     display: flex;
     flex-direction: row;
     width: 1226px;
@@ -23,7 +22,7 @@
     padding-right: 0;
   }
 
-  &::after {
+  &--index::after {
     @media (--desktop) {
       content: "";
       position: absolute;
@@ -31,7 +30,7 @@
       right: 0;
       width: 50%;
       height: 697px;
-      background-image: url("../../img/m-banner.jpg"), linear-gradient(#65a83d, #62a53b);
+      background-image: url("../../img/index-banner.jpg"), linear-gradient(#65a83d, #62a53b);
       background-repeat: no-repeat;
       background-size: auto 720px;
       background-position-x: right;

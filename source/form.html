@@ -6,7 +6,7 @@
 <main class="profile">
   <div class="page__centerer">
 
-    <h1 class="profile__title">Подбор Программы</h1>
+    <h1 class="profile__title">Подбор программы</h1>
     <p class="profile__subtitle">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
   </div>
@@ -29,26 +29,23 @@
           </fieldset>
           <fieldset class="form__filter-radio form__filter--border">
             <legend class="visually-hidden">Нужды питомца</legend>
-            <label class="form__label form__label--wl" for="weight-loss">
+            <label class="form__label form__label--radio" for="weight-loss">
               <input class="form__radio" type="radio" name="pet-needs" id="weight-loss" checked>
-              <span class="form__checkmark"></span>
               Похудение
             </label>
-            <label class="form__label" for="weight-gain">
+            <label class="form__label form__label--radio" for="weight-gain">
               <input class="form__radio" type="radio" name="pet-needs" id="weight-gain">
-              <span class="form__checkmark"></span>
               Набор Массы
             </label>
-            <label class="form__label form__label--doubts" for="doubts">
+            <label class="form__label form__label--radio" for="doubts">
               <input class="form__radio" type="radio" name="pet-needs" id="doubts">
-              <span class="form__checkmark"></span>
               Не знаю (Нужен ваш совет)
             </label>
           </fieldset>
         </div>
         <fieldset class="form__contacts form__legend">
           <legend class="form__legend form__legend--contacts">Контактные данные (владельца кота)</legend>
-          <div class="form__group-contacts">
+          <div class="form__group-contacts form__group-wrapper">
             <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup>
               <input class="form__input form__input--email" type="number" id="email" placeholder="kuklachev@gmail.com" required>
               <span class="form__icon-tel"></span>
@@ -67,22 +64,22 @@
           <legend class="form__legend form__legend-addons">Дополнительно</legend>
           <ul class="form__addons-list">
             <li class="form__addons-item">
-              <label class="form__label" for="sugar-sub">
+              <label class="form__label form__label-checkbox" for="sugar-sub">
                 <input class="form__checkbox" type="checkbox" id="sugar-sub" value="sugar-substitute" name="add-ons" checked>сахарозаменитель
               </label>
             </li>
             <li class="form__addons-item">
-              <label class="form__label" for="water">
+              <label class="form__label form__label-checkbox" for="water">
               <input class="form__checkbox" type="checkbox" id="water" name="add-ons" value="liquid">питьевая вода
             </label>
           </li>
             <li class="form__addons-item">
-              <label class="form__label" for="milk">
+              <label class="form__label form__label-checkbox" for="milk">
                 <input class="form__checkbox" type="checkbox" id="milk" name="add-on" value="dairy">молоко
               </label>
             </li>
             <li class="form__addons-item">
-              <label class="form__label" for="vitamins">
+              <label class="form__label form__label-checkbox" for="vitamins">
                 <input class="form__checkbox" type="checkbox" id="vitamins" name="add-ons" value="supplement">витамины
               </label>
             </li>
