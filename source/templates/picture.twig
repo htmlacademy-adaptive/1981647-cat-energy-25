@@ -6,11 +6,11 @@
 
     {% for vp in image.viewports -%}
 
-      {% if format! = image.ext or not loop.last -%}
+      {% if format != image.ext or not loop.last -%}
         <source
           srcset="
             {%- for dppx in densities -%}
-              img/{{ vp }}-{{ name }}@{{ dppx }}x.{{ format }} {{ dppx }}x{% if dppx != image.maxdppx %}, {% endif %}
+              img/{{ name }}-{{ vp }}@{{ dppx }}x.{{ format }} {{ dppx }}x{% if dppx != image.maxdppx %}, {% endif %}
             {%- endfor -%}
           "
           type="image/{{ format }}"
@@ -21,10 +21,10 @@
       {% else -%}
         <img
           class="{{ class }}"
-          src="img/{{ vp }}-{{ name }}@1x.{{ image.ext }}"
+          src="img/{{ name }}-{{ vp }}@1x.{{ image.ext }}"
           srcset="
             {%- for dppx in densities if dppx != 1 -%}
-              img/{{ vp }}-{{ name }}@{{ dppx }}x.{{ image.ext }} {{ dppx }}x
+              img/{{ name }}-{{ vp }}@{{ dppx }}x.{{ image.ext }} {{ dppx }}x
               {%- if dppx != image.maxdppx -%}, {% endif -%}
             {%- endfor -%}
           "

@@ -44,7 +44,7 @@
   }
 
   &--slim::before {
-    background-image: url("../../icons/cat_slim.svg");
+    background-image: url("../../icons/sprite.svg#cat-slim.svg");
     width: 50px;
     height: 53px;
     background-size: 50px 53px;
@@ -65,7 +65,7 @@
   }
 
   &--weight-gain::before {
-    background-image: url("../../icons/cat_fat.svg");
+    background-image: url("../../icons/sprite.svg#cat-fat.svg");
     width: 67px;
     height: 50px;
     background-size: 67px 50px;
@@ -178,7 +178,7 @@
   &::after {
     content: "";
     position: absolute;
-    background-image: url("../../icons/arrow-right.svg");
+    background-image: url("../../icons/sprite.svg#arrow-right.svg");
     width: 24px;
     height: 12px;
     top: 50%;
@@ -192,7 +192,7 @@
   }
 
   &:hover::after {
-    background-image: url("../../icons/arrow-long.svg");
+    background-image: url("../../icons/sprite.svg#arrow-long.svg");
     width: 32px;
     height: 12px;
     right: -52px;

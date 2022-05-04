@@ -101,7 +101,6 @@ export function copyAssets (done) {
     "./source/fonts/*.{woff2,woff}",
     "./source/*.ico",
     "./source/img/**/*.svg",
-    "./source/icons/**/*.svg", // эту строчку удалить. она переносит иконки в build
     "./source/favicons/*",
     "./source/*.webmanifest"
   ], {

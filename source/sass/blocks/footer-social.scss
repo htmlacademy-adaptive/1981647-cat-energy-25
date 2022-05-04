@@ -46,15 +46,15 @@
   }
 
   &--icon_tw {
-    --icon: url("../../icons/icon-tg.svg");
+    --icon: url("../../icons/sprite.svg#tg");
   }
 
   &--icon_yt {
-    --icon: url("../../icons/icon-yt.svg");
+    --icon: url("../../icons/sprite.svg#yt");
   }
 
   &--icon_tg {
-    --icon: url("../../icons/icon-vk.svg");
+    --icon: url("../../icons/sprite.svg#vk");
   }
 
   &::after {
