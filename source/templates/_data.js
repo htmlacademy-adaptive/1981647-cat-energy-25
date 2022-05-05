@@ -2,17 +2,17 @@ export default {
   "pages": [
     {
       "path": "index.html",
-      "name": "Главная",
+      "name": "Главная"
     },
     {
       "path": "catalog.html",
-      "name": "Каталог продукции",
+      "name": "Каталог продукции"
     },
     {
       "path": "form.html",
-      "name": "Подбор программы",
-    },
-  ],
+      "name": "Подбор программы"
+    }
+],
   "viewports": {
     "desktop": 1280,
     "tablet": 768,
@@ -24,7 +24,15 @@ export default {
       "width": 68,
       "height": 86,
       "maxdppx": 2,
-      "alt": "Cat Energy Pro chicken.",
+      "alt": "Банка с кормом вкус курицы.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/chiken-big": {
+      "ext": "png",
+      "width": 84,
+      "height": 101,
+      "maxdppx": 2,
+      "alt": "Банка с кормом вкус курицы.",
       "viewports": ["desktop", "tablet", "mobile"]
     }
   }
