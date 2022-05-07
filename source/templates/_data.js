@@ -27,12 +27,68 @@ export default {
       "alt": "Банка с кормом вкус курицы.",
       "viewports": ["desktop", "tablet", "mobile"]
     },
-    "products/chiken-big": {
+    "products/chicken-big": {
       "ext": "png",
       "width": 84,
       "height": 101,
       "maxdppx": 2,
       "alt": "Банка с кормом вкус курицы.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/fish-small": {
+      "ext": "png",
+      "width": 68,
+      "height": 78,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/fish-big": {
+      "ext": "png",
+      "width": 84,
+      "height": 101,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/buckweat-small": {
+      "ext": "png",
+      "width": 68,
+      "height": 78,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/buckweat-big": {
+      "ext": "png",
+      "width": 84,
+      "height": 101,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "products/rice-small": {
+      "ext": "png",
+      "width": 68,
+      "height": 78,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "can": {
+      "ext": "png",
+      "width": 280,
+      "height": 270,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "map": {
+      "ext": "png",
+      "width": 320,
+      "height": 362,
+      "maxdppx": 2,
+      "alt": "Cat Energy Pro курица.",
       "viewports": ["desktop", "tablet", "mobile"]
     }
   }

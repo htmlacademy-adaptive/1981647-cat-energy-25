@@ -11,7 +11,9 @@
   font-size: var(--title-fs);
   line-height: 40px;
   color: var(--primary-color);
-  padding-top: 25px;
+  padding-top: 27px;
+  margin-top: 0;
+  margin-bottom: 41px;
 
   @media (--not-mobile) {
     font-size: var(--title-big);
@@ -50,6 +52,7 @@
   font-family: var(--accent-font);
   font-size: 14px;
   line-height: 20px;
+  text-transform: uppercase;
 
   @media (--not-mobile) {
     font-size: 20px;
@@ -107,6 +110,7 @@
     transform: translateX(-50%);
     background-color: #eaeaea;
     margin-bottom: 20px;
+    text-transform: lowercase;
 
     @media (--not-mobile) {
       font-size: 14px;

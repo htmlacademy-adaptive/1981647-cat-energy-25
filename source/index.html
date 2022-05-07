@@ -9,11 +9,7 @@
       <div class="main-promo__container">
         <h1 class="main-promo__title">Функциональное питание для котов</h1>
         <p class="main-promo__slogan">Занялся собой? Займись котом!</p>
-        <picture class="main-promo__banner-product">
-          <source media="(min-width: 1280px)" srcset="img/index-can-desktop.png">
-          <source media="(min-width: 768px)" srcset="img/index-can-tablet.jpg">
-          <img class="main-promo__product-img" src="../img/index-can-mobile.png" alt="Банка корма для котов." width="280" height="270" />
-        </picture>
+          {% include "./templates/picture.twig" with {name: "can", class: "main-promo__banner-product"} %}
         <a href="form.html" class="main-promo__button-programs button">Подобрать Программу</a>
       </div>
     </div>
@@ -64,7 +60,7 @@
           готово.
 
         </li>
-        <li class="principles__item principles__item--silverwear">
+        <li class="principles__item principles__item--eat">
 
           Замените один-два приема обычной еды на наше функциональное
           питание.
@@ -81,7 +77,7 @@
   </section>
   <section class="motivation">
     <div class="motivation__content page__centerer">
-      <h2 class="motivation__title">Живой ример</h2>
+      <h2 class="motivation__title">Живой пример</h2>
       <p class="motivation__testimony">
         Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
         Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
@@ -90,14 +86,14 @@
       </p>
       <dl class="motivation__list">
         <div class="motivation__item motivation__item--badge">
-          <dt class="motivation__name">
+          <dt class="motivation__name motivation__name--badge">
             снижение<br />
             веса
           </dt>
           <dd class="motivation__value">5 кг</dd>
         </div>
         <div class="motivation__item motivation__item--badge">
-          <dt class="motivation__name">
+          <dt class="motivation__name motivation__name--badge">
             затрачено<br />
             времени
           </dt>
@@ -138,6 +134,7 @@
     </div>
     <div class="contacts__location">
       <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20Russia%2C%20191186!5e0!3m2!1sen!2sus!4v1650547Gh435!5m2!1sen!2sus" style="border:0;" allowfullscreen="" title="Офис компании по адресу ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      {% include "./templates/picture.twig" with {name: "map", class: "contacts__map"} %}
     </div>
   </section>
 </main>
