@@ -38,7 +38,7 @@
         <div class="catalog__container">
           <div class="catalog__product-photo">
             <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image"} %}
+              {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image--big"} %}
             </a>
           </div>
           <div class="catalog__product-info">
@@ -94,7 +94,7 @@
         <div class="catalog__container">
           <div class="catalog__product-photo">
             <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image"} %}
+              {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image--big"} %}
             </a>
           </div>
           <div class="catalog__product-info">
@@ -150,7 +150,7 @@
         <div class="catalog__container">
           <div class="catalog__product-photo">
             <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image"} %}
+              {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image--big"} %}
             </a>
           </div>
           <div class="catalog__product-info">
@@ -203,12 +203,16 @@
         <a href="#" class="catalog-button">Заказать</a>
       </li>
       <li class="catalog__item">
-        <div class="catalog__container catalog__container--last">
-          <div class="catalog__icon catalog__icon--plus">
-            <a href="#" class="catalog__link">
+        <div class="catalog__container catalog__container--more">
+          <div class="catalog__product-photo">
+            <a href="" class="catalog__link">
+              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <line x1="31" x2="31" y2="60" stroke="#D3D3D3" stroke-width="2"/>
+                <line x1="60" y1="31" y2="31" stroke="#D3D3D3" stroke-width="2"/>
+                </svg>
             </a>
           </div>
-          <div class="catalog__info">
+          <div class="catalog__info catalog__info--more">
             <a href="#" class="catalog__link">
               <h2 class="catalog__title catalog__title--more">Показать еще 100500 товаров</h2>
             </a>
@@ -271,22 +275,6 @@
           <p class="promotions__text">Закажите все и получите чехол для кота в подарок!</p>
         </div>
       </div>
-  </section>
-  <section class="contacts contacts--theme">
-    <div class="contacts__wrapper page__centerer">
-      <h2 class="visually-hidden">Наш адрес</h2>
-      <div class="contacts__informative">
-        <p class="contacts__advertisement">
-          приглашаем к сотрудничеству дилеров!
-        </p>
-      </div>
-      <address class="contacts__address">
-        ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-      </address>
-    </div>
-    <div class="contacts__location">
-      <img class="contacts__map" src="img/location.png" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург" width="320" height="362" />
-    </div>
   </section>
 </main>
 {% endblock %}

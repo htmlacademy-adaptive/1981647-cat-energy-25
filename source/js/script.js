@@ -13,3 +13,10 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+let contactMapIframe = document.querySelector('.contacts__map--iframe');
+let contactMapImage = document.querySelector('.contacts__map--image');
+
+
+contactMapIframe.style.display = "block";
+contactMapImage.style.display = "none";

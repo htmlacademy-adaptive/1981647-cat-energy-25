@@ -16,10 +16,11 @@
     margin-left: 40px;
   }
 
-  @media (--not-mobile) {
+  @media (--desktop) {
     margin-left: 7px;
     padding-top: 50px;
     padding-bottom: 54px;
+    border-top: none;
   }
 }
 

@@ -8,7 +8,11 @@
     min-width: 708px;
     padding-left: 92px;
     align-items: flex-start;
-    min-height: 800px;
+    min-height: 595px;
+  }
+
+  @media (--desktop) {
+    min-height: 595px;
   }
 }
 
@@ -69,8 +73,8 @@
   }
 
   @media (--desktop) {
-    top: -55px;
-    left: 457px;
+    top: 9px;
+    left: 465px;
     width: 552px;
     height: 499px;
   }

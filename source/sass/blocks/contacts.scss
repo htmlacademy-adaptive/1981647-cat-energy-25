@@ -13,6 +13,10 @@
     padding-top: 55px;
     padding-bottom: 55px;
   }
+
+  @media (--desktop) {
+    display: none;
+  }
 }
 
 .contacts__advertisement {
@@ -46,7 +50,6 @@
 }
 
 .contacts__map {
-  display: block;
   width: 100vw;
   min-width: 320px;
   border: none;
@@ -60,5 +63,13 @@
 
   @media (--desktop) {
     width: 100%;
+  }
+
+  &--iframe {
+    display: none;
+  }
+
+  &--image {
+    display: block;
   }
 }
