@@ -90,6 +90,22 @@ export default {
       "maxdppx": 2,
       "alt": "Cat Energy Pro курица.",
       "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "before-cat": {
+      "ext": "png",
+      "width": 280,
+      "height": 232,
+      "maxdppx": 2,
+      "alt": "Котик с проблемным весом.",
+      "viewports": ["desktop", "tablet", "mobile"]
+    },
+    "after-cat": {
+      "ext": "png",
+      "width": 280,
+      "height": 232,
+      "maxdppx": 2,
+      "alt": "Котик с нормальным весом.",
+      "viewports": ["desktop", "tablet", "mobile"]
     }
   }
 }

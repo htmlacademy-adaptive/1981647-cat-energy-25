@@ -136,10 +136,73 @@
   }
 }
 
+.motivation_-before-img,
+.motivation__after-img {
+  display: block;
+
+  @media (--not-mobile) {
+    width: 592px;
+    height: 511px;
+  }
+}
+
+.motivation__slider {
+  display: grid;
+  width: 280px;
+  min-height: 248px;
+  margin: 0 0 25px;
+}
+
+.motivation__before-wrapper {
+  display: grid;
+  grid-template-columns: 280px;
+  grid-column: 1/-1;
+  grid-row: 1/-1;
+  width: 50%;
+  z-index: 2;
+  overflow: hidden;
+}
+
+
+.motivation__after-wrapper {
+  grid-row: 1/-1;
+  grid-column: 1/-1;
+  overflow: hidden;
+}
+
+.motivation__controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 40px;
+  width: 219px;
+  margin: 0 auto;
+}
+
+.motivation__range {
+  width: 84px;
+  height: 14px;
+  padding: 3px 5px;
+  border: 1px solid #cdcdcd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    appearance: none;
+    width: 50%;
+    height: 6px;
+    border-radius: 10px;
+    background-color: var(--accent-color);
+  }
+}
+
 .motivation__button {
   font-family: var(--accent-font);
   font-size: 16px;
   line-height: 20px;
   border: none;
   background-color: #eaeaea;
+  color: var(--primary-color);
+  text-transform: uppercase;
 }

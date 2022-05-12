@@ -109,14 +109,20 @@
       <div class="page__centerer">
         <figure class="motivation__slider">
           <figcaption class="visually-hidden">Результаты До и После.</figcaption>
-          <img class="motivation__before-img" src="img/before-cat.png" alt="Fat cat.">
-          <img class="motivation__after-img" src="img/after-cat.png" alt="Slim cat.">
+          <div class="motivation__before-wrapper">
+            {% include "./templates/picture.twig" with {name: "before-cat", class: "motivation__before-img"} %}
+          </div>
+          <div class="motivation__after-wrapper">
+            {% include "./templates/picture.twig" with {name: "after-cat", class: "motivation__after-img"} %}
+          </div>
         </figure>
-        <button class="motivation__button">Было</button>
-        <div class="motivation__scale">
-          <div class="motivation__thumb"></div>
+        <div class="motivation__controls">
+          <button class="motivation__button">Было</button>
+          <div class="motivation__thumb">
+            <input class="motivation__range" type="range" min="0" max="10" aria-label="Сравнить">
+          </div>
+          <button class="motivation__button">Стало</button>
         </div>
-        <button class="motivation__button">Стало</button>
       </div>
     </div>
   </section>
