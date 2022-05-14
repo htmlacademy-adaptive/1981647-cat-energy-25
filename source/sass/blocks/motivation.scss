@@ -136,7 +136,7 @@
   }
 }
 
-.motivation_-before-img,
+.motivation__before-img,
 .motivation__after-img {
   display: block;
 
@@ -151,6 +151,10 @@
   width: 280px;
   min-height: 248px;
   margin: 0 0 25px;
+
+  @media (--not-mobile) {
+    width: 708px;
+  }
 }
 
 .motivation__before-wrapper {
