@@ -4,6 +4,10 @@
   @media (--not-mobile) {
     background-color: var(--secondary-color);
   }
+
+  @media (--desktop) {
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  }
 }
 
 .motivation__title {
@@ -34,6 +38,10 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 54px;
+  }
+
+  @media (--desktop) {
+    max-width: 436px;
   }
 }
 
@@ -134,6 +142,26 @@
     text-transform: uppercase;
     text-align: right;
   }
+
+  @media (--desktop) {
+    margin-left: 0;
+    flex-direction: row;
+  }
+}
+
+.motivation__wrapper {
+  @media (--desktop) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.motivation__example-container {
+  background-color: #eaeaea;
+
+  @media (--not-mobile) {
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  }
 }
 
 .motivation__before-img,
@@ -143,6 +171,7 @@
   @media (--not-mobile) {
     width: 592px;
     height: 511px;
+    margin-inline: auto;
   }
 }
 
@@ -165,6 +194,13 @@
   width: 50%;
   z-index: 2;
   overflow: hidden;
+  background-color: #eaeaea;
+
+  @media (--not-mobile) {
+    width: 50%;
+    grid-template-columns: 708px;
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  }
 }
 
 
@@ -181,6 +217,10 @@
   padding-bottom: 40px;
   width: 219px;
   margin: 0 auto;
+
+  @media (--not-mobile) {
+    width: 592px;
+  }
 }
 
 .motivation__range {
@@ -192,12 +232,41 @@
   background-color: #ffffff;
   appearance: none;
 
+  @media (--not-mobile) {
+    width: 426px;
+    height: 6px;
+    background-color: #dcdcdc;
+  }
+
   &::-webkit-slider-thumb {
+    position: relative;
     appearance: none;
     width: 50%;
     height: 6px;
     border-radius: 10px;
     background-color: var(--accent-color);
+
+    &::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: #68b738;
+      z-index: 2;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @media (--not-mobile) {
+      border: 1 px solid #cdcdcd;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--accent-color);
+      box-shadow: 0 0 0 10px #ffffff;
+    }
   }
 }
 

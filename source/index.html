@@ -76,53 +76,53 @@
     </div>
   </section>
   <section class="motivation">
-    <div class="motivation__content page__centerer">
-      <h2 class="motivation__title">Живой пример</h2>
-      <p class="motivation__testimony">
-        Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
-        Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
-        этом он не менял своих привычек и по-прежнему спит по 16 часов в
-        день.
-      </p>
-      <dl class="motivation__list">
-        <div class="motivation__item motivation__item--badge">
-          <dt class="motivation__name motivation__name--badge">
-            снижение<br />
-            веса
-          </dt>
-          <dd class="motivation__value">5 кг</dd>
-        </div>
-        <div class="motivation__item motivation__item--badge">
-          <dt class="motivation__name motivation__name--badge">
-            затрачено<br />
-            времени
-          </dt>
-          <dd class="motivation__value motivation__value--days">60 дней</dd>
-        </div>
-        <div class="motivation__item">
-          <dt class="motivation__name">Затраты на питание:</dt>
-          <dd class="motivation__value">15 000 РУБ.</dd>
-        </div>
-      </dl>
-    </div>
-    <div class="motivation__example-container">
-      <div class="page__centerer">
-        <figure class="motivation__slider">
-          <figcaption class="visually-hidden">Результаты До и После.</figcaption>
-          <div class="motivation__before-wrapper">
-            {% include "./templates/picture.twig" with {name: "before-cat", class: "motivation__before-img"} %}
+    <div class="motivation__wrapper page__centerer">
+      <div class="motivation__content">
+        <h2 class="motivation__title">Живой пример</h2>
+        <p class="motivation__testimony">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на
+          Cat Energy Slim. Отличный результат без изнуряющих тренировок! При
+          этом он не менял своих привычек и по-прежнему спит по 16 часов в
+          день.
+        </p>
+        <dl class="motivation__list">
+          <div class="motivation__item motivation__item--badge">
+            <dt class="motivation__name motivation__name--badge">
+              снижение<br />
+              веса
+            </dt>
+            <dd class="motivation__value">5 кг</dd>
           </div>
-          <div class="motivation__after-wrapper">
-            {% include "./templates/picture.twig" with {name: "after-cat", class: "motivation__after-img"} %}
+          <div class="motivation__item motivation__item--badge">
+            <dt class="motivation__name motivation__name--badge">
+              затрачено<br />
+              времени
+            </dt>
+            <dd class="motivation__value motivation__value--days">60 дней</dd>
           </div>
-        </figure>
-        <div class="motivation__controls">
-          <button class="motivation__button">Было</button>
-          <div class="motivation__thumb">
-            <input class="motivation__range" type="range" min="0" max="10" aria-label="Сравнить">
+          <div class="motivation__item">
+            <dt class="motivation__name">Затраты на питание:</dt>
+            <dd class="motivation__value">15 000 РУБ.</dd>
           </div>
-          <button class="motivation__button">Стало</button>
-        </div>
+        </dl>
+      </div>
+      <div class="motivation__example-container">
+          <figure class="motivation__slider">
+            <figcaption class="visually-hidden">Результаты До и После.</figcaption>
+            <div class="motivation__before-wrapper">
+              {% include "./templates/picture.twig" with {name: "before-cat", class: "motivation__before-img"} %}
+            </div>
+            <div class="motivation__after-wrapper">
+              {% include "./templates/picture.twig" with {name: "after-cat", class: "motivation__after-img"} %}
+            </div>
+          </figure>
+          <div class="motivation__controls">
+            <button class="motivation__button">Было</button>
+            <div class="motivation__thumb">
+              <input class="motivation__range" type="range" min="0" max="10" aria-label="Сравнить">
+            </div>
+            <button class="motivation__button">Стало</button>
+          </div>
       </div>
     </div>
   </section>
