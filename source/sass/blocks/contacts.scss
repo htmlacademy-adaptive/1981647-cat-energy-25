@@ -10,8 +10,9 @@
   padding-bottom: 25px;
 
   @media (--not-mobile) {
-    padding-top: 55px;
+    padding-top: 74px;
     padding-bottom: 55px;
+    padding-left: 38px;
   }
 
   @media (--desktop) {
@@ -44,7 +45,7 @@
   max-width: 139px;
 
   @media (--not-mobile) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 20px;
   }
 }
