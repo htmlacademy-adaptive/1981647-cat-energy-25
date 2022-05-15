@@ -22,7 +22,6 @@
 
 .programs__item {
   background-color: var(--bg-color-accent);
-  // padding: 20px 20px;
 
   @media (--not-mobile) {
     padding-bottom: 10px;
@@ -39,6 +38,23 @@
 }
 
 .programs__item-wrapper {
+  @media (--not-mobile) {
+    padding-left: 52px;
+    padding-top: 22px;
+    padding-right: 32px;
+  }
+
+  @media (--desktop) {
+    min-width: 467px;
+    padding-left: 59px;
+  }
+
+  &--weight-gain {
+    @media (--desktop) {
+      padding-left: 32px;
+    }
+  }
+
   &::before {
     content: "";
     display: block;
@@ -100,16 +116,6 @@
       margin-left: 0;
     }
   }
-
-  @media (--not-mobile) {
-    padding-left: 52px;
-    padding-top: 22px;
-    padding-right: 32px;
-  }
-
-  @media (--desktop) {
-    min-width: 467px;
-  }
 }
 
 .programs__title {
@@ -136,7 +142,8 @@
 
   @media (--desktop) {
     padding-bottom: 73px;
-    padding-top: 77px;
+    padding-top: 44px;
+    padding-left: 163px;
   }
 
   &--weight {
@@ -146,9 +153,6 @@
       margin-bottom: 0;
       padding-top: 56px;
       padding-bottom: 20px;
-      // padding-top: 40px;
-      // margin-bottom: 31px;
-      // padding-bottom: 0;
     }
 
     @media (--desktop) {
@@ -173,6 +177,10 @@
     padding-bottom: 29px;
     min-width: 340px;
     border-bottom: none;
+  }
+
+  @media (--desktop) {
+    padding-bottom: 6px;
   }
 }
 
@@ -200,9 +208,9 @@
     content: "";
     position: absolute;
     background-image: url("../../icons/sprite.svg#arrow-right");
-    background-size: 32px 12px;
+    background-size: cover;
     width: 24px;
-    height: 12px;
+    height: 24px;
     top: 18%;
     right: -40px;
     transform: translateY(-50%);
@@ -216,9 +224,9 @@
 
   &:hover::after {
     background-image: url("../../icons/sprite.svg#arrow-long");
-    background-size: 32px 12px;
+    background-size: cover;
     width: 32px;
-    height: 12px;
+    height: 24px;
     right: -52px;
 
     @media (--not-mobile) {
