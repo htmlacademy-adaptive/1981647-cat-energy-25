@@ -213,8 +213,8 @@
 }
 
 .motivation__controls {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding-bottom: 40px;
   width: 219px;
@@ -226,54 +226,58 @@
 }
 
 .motivation__range {
-  position: relative;
-  width: 84px;
-  height: 14px;
+  --range-size: 74px;
+  --thumb-size: 36px;
+  --range-height: 6px;
+
+  box-sizing: content-box;
+  display: grid;
+  grid-template-columns: 1fr var(--thumb-size) calc(var(--curtain) * (var(--range-size) - var(--thumb-size)));
+  width: var(--range-size);
+  height: var(--range-height);
   padding: 3px 5px;
   border: 1px solid #cdcdcd;
-  border-radius: 10px;
+  border-radius: var(--range-height);
   background-color: #ffffff;
 
   @media (--not-mobile) {
-    width: 426px;
-    height: 6px;
+    --range-size: 426px;
+    --thumb-size: 34px;
+
     background-color: #dcdcdc;
     border: 0;
-    border-radius: 10px;
     padding: 0;
   }
+}
 
-  .motivation__thumb {
-    width: 50%;
-    height: 6px;
-    border-radius: 10px;
-    background-color: var(--accent-color);
+.motivation__thumb {
+  box-sizing: border-box;
+  grid-area: 1 / 2 / 2 / 3;
+  height: 100%;
+  border-radius: 100px;
+  background-color: var(--accent-color);
+
+  &:hover {
+    cursor: grab;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.19));
+  }
+
+  &:active {
+    cursor: grabbing;
 
     @media (--not-mobile) {
-      position: absolute;
-      width: 30px;
-      height: 30px;
-      border: 1px solid #cdcdcd;
-      border-radius: 50%;
-      background-color: #ffffff;
-      top: 0;
-      right: 50%;
-      transform: translate(50%, -45%);
-      cursor: pointer;
-
-      &::before {
-        content: "";
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background-color: #68b738;
-        z-index: 2;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
+      --border-color: #68b738;
+      filter: drop-shadow(0 3px 5px rgba(0, 0, 0, 0.2));
     }
+  }
+
+  @media (--not-mobile) {
+    margin-block: calc((var(--range-height) - var(--thumb-size)) / 2);
+    height: var(--thumb-size);
+    padding: 1px;
+    background-clip: content-box;
+    border: 1px solid var(--border-color, #cdcdcd);
+    box-shadow: inset 0 0 0 12px #ffffff;
   }
 }
 
