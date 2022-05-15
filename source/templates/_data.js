@@ -97,7 +97,7 @@ export default {
       "height": 232,
       "maxdppx": 2,
       "alt": "Котик с проблемным весом.",
-      "viewports": ["desktop", "tablet", "mobile"]
+      "viewports": ["tablet", "mobile"]
     },
     "after-cat": {
       "ext": "png",
@@ -105,7 +105,7 @@ export default {
       "height": 232,
       "maxdppx": 2,
       "alt": "Котик с нормальным весом.",
-      "viewports": ["desktop", "tablet", "mobile"]
+      "viewports": ["tablet", "mobile"]
     }
   }
 }
