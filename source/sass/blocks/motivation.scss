@@ -162,63 +162,54 @@
 }
 
 .motivation__example-container {
+  --curtain: 1;
+
   background-color: #eaeaea;
 
   @media (--not-mobile) {
+    --curtain: 0.5;
+
     background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
-  }
-}
-
-.motivation__before-img,
-.motivation__after-img {
-  display: block;
-
-  @media (--not-mobile) {
-    width: 592px;
-    height: 511px;
-    margin-inline: auto;
   }
 }
 
 .motivation__slider {
   display: grid;
+  grid-template-columns: calc(100% * var(--curtain)) 1fr;
   width: 280px;
-  min-height: 248px;
-  margin: 0 0 25px;
+  min-height: 232px;
+  margin: 0 auto 25px;
 
   @media (--not-mobile) {
-    width: 708px;
-    margin-inline: auto;
+    width: 590px;
+    height: 511px;
     margin-bottom: 35px;
+    background-image: linear-gradient(#ffffff 170px, #eaeaea 170px);
   }
 }
 
 .motivation__before-wrapper {
-  display: grid;
-  grid-template-columns: 280px;
-  grid-column: 1/-1;
-  grid-row: 1/-1;
-  width: 50%;
-  z-index: 2;
-  overflow: hidden;
-  background-color: #eaeaea;
-
-  @media (--not-mobile) {
-    width: 50%;
-    grid-template-columns: 708px;
-    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
-  }
+  grid-area: 1 / 1 / 2 / 2;
 }
 
+.motivation__before-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: left;
+}
 
 .motivation__after-wrapper {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  overflow: hidden;
+  grid-area: 1 / 2 / 2 / 3;
+}
 
-  @media (--not-mobile) {
-    margin-left: 55px;
-  }
+.motivation__after-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
 }
 
 .motivation__controls {
