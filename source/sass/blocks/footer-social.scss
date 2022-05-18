@@ -21,6 +21,10 @@
   @media (--not-mobile) {
     width: auto;
   }
+
+  @media (--desktop) {
+    margin-left: 40px;
+  }
 }
 
 .footer-social__item {

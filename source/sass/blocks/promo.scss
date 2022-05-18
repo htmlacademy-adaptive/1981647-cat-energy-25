@@ -22,6 +22,10 @@
     background-repeat: no-repeat;
     z-index: -1;
 
+    @media (min-resolution: --retina-dpi), (min-resolution: --retina-dppx) {
+      background-image: url("../../img/m-banner@2x.jpg"), linear-gradient(#65a83d, #62a53b);
+    }
+
     @media (--not-mobile) {
       display: none;
     }

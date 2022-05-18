@@ -12,11 +12,15 @@
 .promotions__container {
   display: flex;
   flex-direction: column;
-  background-image: url("../../img/bg-promotions.png");
+  background-image: url("../../img/bg-promotions.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   padding: 58px 60px 43px;
   margin-top: 35px;
+
+  @media (min-resolution: --retina-dpi), (min-resolution: --retina-dppx) {
+    background-image: url("../../img/bg-promotions@2x.jpg");
+  }
 
   @media (--not-mobile) {
     flex-direction: row;
@@ -27,6 +31,10 @@
     background-image: url("../../img/bg-promotions-tablet.jpg");
     margin-bottom: 65px;
     padding-bottom: 60px;
+
+    @media (min-resolution: --retina-dpi), (min-resolution: --retina-dppx) {
+      background-image: url("../../img/bg-promotions-tablet@2x.jpg");
+    }
   }
 
   @media (--desktop) {
