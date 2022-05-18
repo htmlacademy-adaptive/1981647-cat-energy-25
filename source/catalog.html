@@ -4,225 +4,227 @@
 
 {% block main %}
 <main class="catalog-content catalog">
-  <div class="page__centerer">
-    <h1 class="catalog-content__title">Каталог продукции</h1>
-    <ul class="catalog__list">
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/chicken-small", class: "catalog__image"} %}
-            </a>
+  <div class="catalog-wrapper">
+    <div class="page__centerer">
+      <h1 class="catalog-content__title">Каталог продукции</h1>
+      <ul class="catalog__list page__centerer">
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/chicken-small", class: "catalog__image"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--small">Cat Energy PRO 500 г</h2>
+              </a>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">500 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Курица</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">400 Р.</dd>
+              </dl>
+            </div>
           </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--small">Cat Energy PRO 500 г</h2>
-            </a>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">500 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Гречка</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">400 Р.</dd>
-            </dl>
-          </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image--big"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--big">Cat Energy PRO 1000 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image--big"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--big">Cat Energy PRO 1000 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">1000 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Курица</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">1000 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">1000 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Курица</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">1000 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/fish-small", class: "catalog__image"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--small">Cat Energy PRO 500 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/fish-small", class: "catalog__image"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--small">Cat Energy PRO 500 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">500 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Рыба</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">700 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">500 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Рыба</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">700 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image--big"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--big">Cat Energy PRO 500 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image--big"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--big">Cat Energy PRO 500 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">1000 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Рыба</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">1000 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">1000 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Рыба</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">1000 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/buckweat-small", class: "catalog__image"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--small">Cat Energy SLIM 500 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/buckweat-small", class: "catalog__image"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--small">Cat Energy SLIM 500 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">500 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Гречка</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">400 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">500 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Гречка</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">400 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="#" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image--big"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--big">Cat Energy SLIM 1000 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="#" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image--big"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--big">Cat Energy SLIM 1000 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">1000 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Гречка</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">700 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">1000 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Гречка</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">700 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container">
-          <div class="catalog__product-photo">
-            <a href="" class="catalog__link">
-              {% include "./templates/picture.twig" with {name: "products/rice-small", class: "catalog__image"} %}
-            </a>
-          </div>
-          <div class="catalog__product-info">
-            <a href="#" class="catalog__link">
-              <h2 class="catalog__title catalog__title--small">Cat Energy SLIM 500 г</h2>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container">
+            <div class="catalog__product-photo">
+              <a href="" class="catalog__link">
+                {% include "./templates/picture.twig" with {name: "products/rice-small", class: "catalog__image"} %}
+              </a>
+            </div>
+            <div class="catalog__product-info">
+              <a href="#" class="catalog__link">
+                <h2 class="catalog__title catalog__title--small">Cat Energy SLIM 500 г</h2>
+              </a>
 
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Масса</dt>
-              <dd class="stats__value">500 г</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Вкус</dt>
-              <dd class="stats__value">Рис</dd>
-            </dl>
-            <dl class="catalog__stats stats">
-              <dt class="stats__info">Цена</dt>
-              <dd class="stats__value">500 Р.</dd>
-            </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Масса</dt>
+                <dd class="stats__value">500 г</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Вкус</dt>
+                <dd class="stats__value">Рис</dd>
+              </dl>
+              <dl class="catalog__stats stats">
+                <dt class="stats__info">Цена</dt>
+                <dd class="stats__value">500 Р.</dd>
+              </dl>
+            </div>
           </div>
-        </div>
-        <a href="#" class="catalog-button">Заказать</a>
-      </li>
-      <li class="catalog__item">
-        <div class="catalog__container catalog__container--more">
-          <div class="catalog__product-photo">
-            <a href="" class="catalog__link">
-              <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <line x1="31" x2="31" y2="60" stroke="#D3D3D3" stroke-width="2"/>
-                <line x1="60" y1="31" y2="31" stroke="#D3D3D3" stroke-width="2"/>
-                </svg>
-            </a>
+          <a href="#" class="catalog-button">Заказать</a>
+        </li>
+        <li class="catalog__item">
+          <div class="catalog__container catalog__container--more">
+            <div class="catalog__product-photo catalog__product-photo--more">
+              <a href="" class="catalog__link">
+                <svg class="catalog__more" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <line x1="31" x2="31" y2="60" stroke="#D3D3D3" stroke-width="2"/>
+                  <line x1="60" y1="31" y2="31" stroke="#D3D3D3" stroke-width="2"/>
+                  </svg>
+              </a>
+            </div>
+            <div class="catalog__info catalog__info--more">
+              <a href="#" class="catalog__link catalog__link--more">
+                <h2 class="catalog__title catalog__title--more">Показать еще 100500 товаров</h2>
+              </a>
+              <p class="catalog__subtitle catalog__subtitle--more">На самом деле вкусов </br> гораздо
+                больше!</p>
+            </div>
           </div>
-          <div class="catalog__info catalog__info--more">
-            <a href="#" class="catalog__link catalog__link--more">
-              <h2 class="catalog__title catalog__title--more">Показать еще 100500 товаров</h2>
-            </a>
-            <p class="catalog__subtitle catalog__subtitle--more">На самом деле вкусов гораздо
-              больше!</p>
-          </div>
-        </div>
-        <a href="#" class="catalog-button catalog-button--secondary-color">Показать все</a>
-      </li>
-    </ul>
+          <a href="#" class="catalog-button catalog-button--secondary-color">Показать все</a>
+        </li>
+      </ul>
+    </div>
   </div>
   <section class="goods page__centerer">
     <div class="goods__title-wrapper">

@@ -10,17 +10,13 @@
   @media (--not-mobile) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 55px 0;
+    padding: 15px 0;
   }
 }
 
 .footer__logo {
   text-decoration: none;
   display: block;
-  width: 128px;
-  height: 24px;
-  padding-top: 20px;
-  padding-bottom: 32px;
 
   @media (--not-mobile) {
     padding-top: 10px;
@@ -34,6 +30,16 @@
   &:active {
     opacity: 0.6;
   }
+}
+
+.footer__logo-img {
+  display: block;
+  width: 128px;
+  height: 24px;
+  object-fit: cover;
+  padding-top: 34px;
+  box-sizing: content-box;
+  padding-bottom: 31px;
 }
 
 .footer__copyright {
@@ -53,7 +59,7 @@
 .footer__copyright-text {
   display: inline-block;
   text-decoration: none;
-  font-family: var(--accent-font);
+  font-family: var(--main-font);
   font-size: 16px;
   line-height: 19px;
   color: #444444;

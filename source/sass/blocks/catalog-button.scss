@@ -31,6 +31,11 @@
     @media (--not-mobile) {
       font-size: 16px;
       font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    @media (--desktop) {
+      margin-bottom: 45px;
     }
 
     &:hover {

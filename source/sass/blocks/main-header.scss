@@ -54,6 +54,8 @@
 
 .main-header__logo-text {
   width: 101px;
-  height: auto;
   display: block;
+  object-fit: cover;
+  padding-top: 10px;
+  height: 36px;
 }

@@ -2,6 +2,10 @@
   @media (--not-mobile) {
     border-bottom: 1px solid #e6e6e6;
   }
+
+  @media (--desktop) {
+    border-bottom: none;
+  }
 }
 
 .principles__title {
@@ -19,6 +23,10 @@
     margin-bottom: 30px;
     padding-top: 25px;
   }
+
+  @media (--desktop) {
+    padding-top: 42px;
+  }
 }
 
 .principles__list {
@@ -27,7 +35,7 @@
   margin: 0;
   display: grid;
   counter-reset: principle;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 
   @media (--not-mobile) {
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
@@ -45,12 +53,12 @@
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 11px;
   min-height: 60px;
   display: flex;
   align-items: center;
   padding-left: 80px;
-  padding-top: 8px;
+  padding-top: 15px;
 
   @media (--not-mobile) {
     display: flex;
@@ -92,8 +100,8 @@
   position: absolute;
   width: 60px;
   height: 60px;
-  top: 0;
-  left: -80px;
+  top: 13;
+  left: 0;
 
   @media (--not-mobile) {
     top: 40px;

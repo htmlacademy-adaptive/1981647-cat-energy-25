@@ -15,9 +15,12 @@
     line-height: 60px;
     border: none;
     padding-top: 40px;
+    padding-bottom: 0;
+    margin-bottom: 80px;
   }
 
   @media (--desktop) {
     padding-top: 55px;
+    margin-bottom: 30px;
   }
 }

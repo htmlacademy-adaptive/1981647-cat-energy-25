@@ -14,9 +14,6 @@
   @media (--desktop) {
     grid-template-columns: repeat(2, minmax(574px, 1fr));
     column-gap: 70px;
-    // padding-left: 20px;
-    // grid-template-columns: repeat(auto-fill, minmax(570px, 1fr));
-    // column-gap: 80px;
   }
 }
 
@@ -38,6 +35,9 @@
 }
 
 .programs__item-wrapper {
+  padding-left: 20px;
+  padding-right: 20px;
+
   @media (--not-mobile) {
     padding-left: 52px;
     padding-top: 22px;
@@ -69,7 +69,8 @@
     background-image: url("../../icons/sprite.svg#cat-slim");
     width: 50px;
     height: 53px;
-    background-size: 50px 53px;
+    background-size: 53px 53px;
+    margin-top: -8px;
 
     @media (--not-mobile) {
       width: 200px;
@@ -93,19 +94,19 @@
 
   &--weight-gain::before {
     background-image: url("../../icons/sprite.svg#cat-fat");
-    width: 67px;
-    height: 50px;
-    background-size: 67px 50px;
-    margin-left: -3px;
-    margin-top: -8px;
+    width: 69px;
+    height: 64px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: -8px;
+    margin-top: -17px;
 
     @media (--not-mobile) {
       width: 269px;
-      height: 266px;
-      background-size: 264px 333px;
-      background-repeat: no-repeat;
+      height: 267px;
       float: right;
-      margin-left: 25px;
+      margin-left: 32px;
+      margin-top: 31px;
     }
 
     @media (--desktop) {
@@ -125,9 +126,9 @@
   line-height: 37px;
   color: var(--primary-color);
   text-transform: uppercase;
-  margin-left: 70px;
-  margin-top: 17px;
-  margin-bottom: 25px;
+  margin-left: 71px;
+  margin-top: 33px;
+  margin-bottom: 34px;
 
   @media (--not-mobile) {
     font-size: var(--title-fs);
@@ -156,8 +157,10 @@
     }
 
     @media (--desktop) {
+      padding-left: 194px;
       padding-bottom: 0;
-      margin-bottom: 70px;
+      margin-bottom: 76px;
+      padding-top: 37px;
     }
   }
 }
@@ -182,6 +185,12 @@
   @media (--desktop) {
     padding-bottom: 6px;
   }
+
+  &--weight {
+    @media (--desktop) {
+      padding-left: 30px;
+    }
+  }
 }
 
 .programs__link {
@@ -195,11 +204,18 @@
   text-transform: uppercase;
   display: inline-block;
   margin-top: 20px;
+  padding-bottom: 20px;
 
   @media (--not-mobile) {
     font-size: 20px;
     line-height: 30px;
     padding-bottom: 55px;
+  }
+
+  &--weight {
+    @media (--desktop) {
+      padding-left: 30px;
+    }
   }
 }
 

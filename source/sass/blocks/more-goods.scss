@@ -41,11 +41,13 @@
   line-height: 16px;
   color: var(--title-color);
   width: 100%;
+  margin-bottom: 0;
 
   @media (--not-mobile) {
     width: auto;
     font-size: 20px;
     line-height: 20px;
+    margin: 0;
   }
 
   @media (--desktop) {
