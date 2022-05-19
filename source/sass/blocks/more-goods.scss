@@ -14,7 +14,7 @@
   @media (--desktop) {
     width: 100%;
     max-width: 896px;
-    padding-top: 17px;
+    padding-top: 0;
   }
 }
 
@@ -51,7 +51,7 @@
   }
 
   @media (--desktop) {
-    // width: 25%;
+    width: 25%;
     padding: 0;
     margin: 0;
   }
@@ -84,20 +84,19 @@
   }
 
   @media (--desktop) {
-    // width: 20%;
+    margin-right: 0;
+    margin-left: 41px;
   }
 }
 
 .more-goods__value {
-  // width: 30%;
   text-align: right;
 
   @media (--not-mobile) {
-    // width: 15%;
     text-align: right;
   }
 
   @media (--desktop) {
-    width: 10%;
+    width: 7%;
   }
 }

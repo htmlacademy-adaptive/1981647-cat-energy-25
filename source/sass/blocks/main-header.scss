@@ -39,6 +39,7 @@
 
       @media (min-resolution: --retina-dpi), (min-resolution: --retina-dppx) {
         background-image: url("../../img/index-banner@2x.jpg"), linear-gradient(#65a83d, #62a53b);
+        background-size: auto 720px;
       }
     }
   }

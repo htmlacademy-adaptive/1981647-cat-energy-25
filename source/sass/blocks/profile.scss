@@ -1,3 +1,9 @@
+.profile__heading {
+  @media (--not-mobile) {
+    margin-bottom: 53px;
+  }
+}
+
 .profile__title {
   font-family: var(--accent-font); //changed
   font-size: var(--title-fs);
@@ -14,6 +20,9 @@
     line-height: 60px;
     font-weight: 400;
     margin-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 56px;
+    border-top: none;
   }
 
   @media (--desktop) {
@@ -41,6 +50,7 @@
     font-weight: 400;
     margin-left: 40px;
     max-width: 380px;
+    margin-bottom: 0;
   }
 
   @media (--desktop) {
