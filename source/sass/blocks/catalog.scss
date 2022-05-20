@@ -1,5 +1,9 @@
 .catalog-wrapper {
   border-bottom: 1px solid #ededed;
+
+  @media (--desktop) {
+    border-bottom: none;
+  }
 }
 
 .catalog__list {
@@ -9,14 +13,14 @@
   display: grid;
 
   @media (--not-mobile) {
-    row-gap: 60px;
+    row-gap: 52px;
     column-gap: 60px;
     grid-template-columns: repeat(auto-fill, minmax(324px, 1fr));
   }
 
   @media (--desktop) {
     grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
-    row-gap: 10px;
+    row-gap: 0;
     column-gap: 80px;
   }
 }
@@ -26,16 +30,18 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  min-height: 209px;
   border-bottom: 1px solid #ededed;
-  padding-bottom: 35px;
+  padding-bottom: 20px;
 
   @media (--not-mobile) {
     justify-content: space-between;
     align-items: center;
     border: none;
-    min-height: 511px;
+    min-height: auto;
     min-width: 324px;
     background-image: linear-gradient(to bottom, #ffffff, #ffffff 82px, #f2f2f2 82px, #f2f2f2);
+    padding-bottom: 35px;
   }
 
   @media (--desktop) {
@@ -82,6 +88,16 @@
   display: flex;
   text-decoration: none;
   align-items: flex-end;
+
+  &--more-svg {
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+    @media (--not-mobile) {
+      padding-top: 5px;
+      padding-bottom: 0;
+    }
+  }
 }
 
 .catalog__product-info {
@@ -91,11 +107,13 @@
     display: flex;
     flex-direction: column;
     min-width: 252px;
+    margin-bottom: 15px;
   }
 
   @media (--desktop) {
     padding: 0;
     min-width: 180px;
+    margin-bottom: 10px;
   }
 }
 
@@ -103,6 +121,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 0;
+
+  @media (--not-mobile) {
+    margin-bottom: 0;
+  }
 
   @media (--desktop) {
     margin-top: 40px;
@@ -164,6 +187,7 @@
   font-size: 16px;
   line-height: 20px;
   margin-right: 64px;
+  text-transform: uppercase;
 
   @media (--not-mobile) {
     max-width: 145px;
@@ -206,10 +230,14 @@
   font-size: 12px;
   line-height: 16px;
   color: var(--description-color);
+  margin-top: 10px;
+  margin-bottom: 15px;
 
   @media (--not-mobile) {
     font-size: 16px;
     line-height: 18px;
+    width: 170px;
+    margin-bottom: 84px;
   }
 }
 
@@ -218,6 +246,7 @@
   display: block;
   width: 68px;
   height: 86px;
+  margin-top: 7px;
 
   @media (--not-mobile) {
     width: 161px;
@@ -234,6 +263,7 @@
   &--big {
     width: 84px;
     height: 101px;
+    margin-top: 18px;
 
     @media (--not-mobile) {
       width: 168px;

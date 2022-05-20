@@ -58,9 +58,10 @@
 }
 
 .main-header__logo-text {
-  width: 101px;
+  width: 109px;
   display: block;
   object-fit: cover;
   padding-top: 10px;
   height: 36px;
+  box-sizing: content-box;
 }

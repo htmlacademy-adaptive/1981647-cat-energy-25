@@ -6,11 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 13px;
+  padding-top: 40px;
   padding-bottom: 15px;
 
   @media (--not-mobile) {
-    padding-top: 74px;
+    padding-top: 57px;
     padding-bottom: 55px;
     padding-left: 38px;
   }
@@ -33,6 +33,7 @@
     font-size: 20px;
     line-height: 26px;
     margin: 0;
+    min-width: 172px;
   }
 }
 

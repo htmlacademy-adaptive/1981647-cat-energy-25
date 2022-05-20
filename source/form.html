@@ -12,10 +12,10 @@
   </div>
   <section class="form-profile">
     <h2 class="visually-hidden">Форма Заявок</h2>
-    <form class="form page__centerer" action="https://echo.htmlacademy.ru">
-      <div class="form__content-wrapper">
+    <form class="form" action="https://echo.htmlacademy.ru">
+      {# <div class="form__content-wrapper"> #}
         <div class="form__group-wrapper">
-          <fieldset class="form__group">
+          <fieldset class="form__group form__group--info-pet">
             <legend class="visually-hidden">Информация о питомце</legend>
             <label for="name" class="form__label form__label--name">Имя:<sup>*</sup>
               <input class="form__input form__input--info" type="text" id="name" placeholder="Барсик" required>
@@ -27,7 +27,7 @@
               <input class="form__input form__input--info" type="number" id="age" placeholder="7">
             </label>
           </fieldset>
-          <fieldset class="form__filter-radio form__filter--border">
+          <fieldset class="form__filter--radio form__filter--border">
             <legend class="visually-hidden">Нужды питомца</legend>
             <div class="form__filter-wrapper">
               <label class="form__label form__label--radio" for="weight-loss">
@@ -46,7 +46,9 @@
           </fieldset>
         </div>
         <fieldset class="form__contacts form__legend">
-          <legend class="form__legend form__legend--contacts heading">Контактные данные (владельца кота)</legend>
+          <legend class="form__legend form__legend--contacts">
+            <span class="form__title-wrapper">Контактные данные (владельца&nbsp;кота)</span>
+          </legend>
           <div class="form__group-contacts form__group-wrapper">
             <label class="form__label form__label--email" for="email">E-mail:<sup>*</sup>
               <input class="form__input form__input--email" type="number" id="email" placeholder="kuklachev@gmail.com" required>
@@ -63,7 +65,8 @@
           <textarea class="form__feedback" name="comment" cols="30" rows="10">Расскажите обо всех повадках кота</textarea>
         </fieldset>
         <fieldset class="form__add-ons form__legend">
-          <legend class="form__legend form__legend--addons heading">Дополнительно</legend>
+          <legend class="form__legend form__legend--addons heading
+          ">Дополнительно</legend>
           <ul class="form__addons-list">
             <li class="form__addons-item">
               <label class="form__label form__label-checkbox" for="sugar-sub">
@@ -91,7 +94,7 @@
             <span class="form__required-text">* — Обязательные поля</span>
           </div>
         </fieldset>
-    </div>
+    {# </div> #}
 
     </form>
   </section>

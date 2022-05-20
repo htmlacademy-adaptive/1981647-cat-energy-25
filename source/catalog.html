@@ -4,10 +4,10 @@
 
 {% block main %}
 <main class="catalog-content catalog">
-  <div class="catalog-wrapper">
-    <div class="page__centerer">
+  <div class="catalog-wrapper page__centerer">
+    {# <div class="page__centerer"> #}
       <h1 class="catalog-content__title">Каталог продукции</h1>
-      <ul class="catalog__list page__centerer">
+      <ul class="catalog__list">
         <li class="catalog__item">
           <div class="catalog__container">
             <div class="catalog__product-photo">
@@ -206,7 +206,7 @@
         <li class="catalog__item">
           <div class="catalog__container catalog__container--more">
             <div class="catalog__product-photo catalog__product-photo--more">
-              <a href="" class="catalog__link">
+              <a href="" class="catalog__link catalog__link--more-svg">
                 <svg class="catalog__more" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <line x1="31" x2="31" y2="60" stroke="#D3D3D3" stroke-width="2"/>
                   <line x1="60" y1="31" y2="31" stroke="#D3D3D3" stroke-width="2"/>
@@ -217,14 +217,14 @@
               <a href="#" class="catalog__link catalog__link--more">
                 <h2 class="catalog__title catalog__title--more">Показать еще 100500 товаров</h2>
               </a>
-              <p class="catalog__subtitle catalog__subtitle--more">На самом деле вкусов </br> гораздо
+              <p class="catalog__subtitle">На самом деле вкусов гораздо
                 больше!</p>
             </div>
           </div>
           <a href="#" class="catalog-button catalog-button--secondary-color">Показать все</a>
         </li>
       </ul>
-    </div>
+    {# </div> #}
   </div>
   <section class="goods page__centerer">
     <div class="goods__title-wrapper">
