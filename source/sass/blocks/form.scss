@@ -250,14 +250,23 @@
     outline-offset: max(2px, 0.15em);
   }
 
+  &:focus-visible {
+    outline: max(2px, 0.15em) solid currentcolor;
+    outline-offset: max(2px, 0.15em);
+  }
+
   @media (--desktop) {
     margin-bottom: 27px;
   }
 }
 
+@supports selector(:focus-visible) {
+  .form__radio:focus {
+    outline: none;
+  }
+}
+
 .form__contacts {
-  // display: flex;
-  // justify-content: space-between;
   margin-bottom: 5px;
 
   @media (--not-mobile) {
@@ -328,13 +337,16 @@
     outline: 2px solid #444444;
   }
 
-  &:focus:invalid {
-    border: 2px solid #ff8282;
+  &--error {
+    &:focus:invalid {
+      outline: -2px solid #ff8282;
+    }
+
+    &:focus:invalid ~ span {
+      --fill: #ff8282;
+    }
   }
 
-  &:focus:invalid ~ span {
-    --fill: #ff8282;
-  }
 
   &--email,
   &--phone {
@@ -544,7 +556,7 @@
     box-shadow: inset 1em 1em var(--accent-color);
     background-color: #68b738;
     transform-origin: bottom left;
-    clip-path: polygon(3% 36%, 0 43%, 47% 107%, 71% 68%, 107% 0, 45% 93%);
+    clip-path: polygon(10% 36%, 0% 43%, 47% 107%, 71% 68%, 107% 0%, 45% 93%);
 
     @media (--not-mobile) {
       width: 24px;
