@@ -3,6 +3,7 @@
 
   @media (--not-mobile) {
     background-color: var(--secondary-color);
+    background-image: linear-gradient(180deg, #ffffff 621px, #eaeaea 170px);
   }
 
   @media (--desktop) {
@@ -35,7 +36,7 @@
 
 .motivation__content {
   @media (--not-mobile) {
-    margin-bottom: 76px;
+    margin-bottom: 43px;
   }
 
   @media (--desktop) {
@@ -76,16 +77,22 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
+  margin-left: 0;
 
   @media (--not-mobile) {
     font-size: 20px;
     line-height: 20px;
+    margin-top: 10px;
   }
 }
 
 .motivation__item--badge {
   position: relative;
-  margin-bottom: 28px;
+  margin-bottom: 35px;
+
+  @media (--not-mobile) {
+    min-width: 162px;
+  }
 
   &:first-child {
     margin-right: 30px;
@@ -108,7 +115,6 @@
     padding: 15px 15px 18px;
     min-width: 120px;
     text-align: center;
-    margin-left: 5px;
 
     @media (--not-mobile) {
       font-size: 30px;
@@ -118,7 +124,14 @@
 
     &--days {
       @media (--not-mobile) {
-        padding: 15px 35px 25px;
+        padding: 15px 30px 25px;
+        margin-left: 15px;
+      }
+    }
+
+    &--price {
+      @media (--mobile) {
+        margin-left: 0;
       }
     }
   }
@@ -140,6 +153,8 @@
       font-size: 14px;
       line-height: 14px;
       background-color: var(--secondary-color);
+      bottom: -20px;
+      width: 127px;
     }
 
     @media (--desktop) {
@@ -160,9 +175,9 @@
 
     @media (--not-mobile) {
       flex-direction: column;
-      margin-left: 159px;
+      margin-left: auto;
       width: auto;
-      margin-top: 0;
+      margin-top: -32px;
       text-transform: uppercase;
       text-align: right;
     }
@@ -187,12 +202,13 @@
   @media (--desktop) {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 30px;
   }
 }
 
 .motivation__example-container {
   --curtain: 1;
-
+  position: relative;
   background-color: #eaeaea;
 
   @media (--not-mobile) {
@@ -203,6 +219,18 @@
 
   @media (--desktop) {
     background-image: linear-gradient(180deg, #ffffff 130px, #eaeaea 127px);
+  }
+
+  &::before {
+    @media (--not-mobile) {
+      left: calc((50vw - var(--tablet-content) /2 ) * -1);
+    }
+  }
+
+  &::after {
+    @media (--not-mobile) {
+      right: calc((50vw - var(--tablet-content) /2 ) * -1);
+    }
   }
 }
 
@@ -231,6 +259,26 @@
   grid-area: 1 / 1 / 2 / 2;
 }
 
+.motivation__example-container::before,
+.motivation__example-container::after {
+  --tablet-content: 708px;
+
+  @media (--not-mobile) {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: calc(50vw - var(--tablet-content) / 2);
+    background-image: linear-gradient(180deg, #ffffff 170px, #eaeaea 170px);
+  }
+
+  @media (--desktop) {
+    background-image: none;
+    width: 0;
+    height: 0;
+  }
+}
+
 .motivation__before-img {
   display: block;
   width: 100%;
@@ -241,6 +289,7 @@
 
 .motivation__after-wrapper {
   grid-area: 1 / 2 / 2 / 3;
+  position: relative;
 }
 
 .motivation__after-img {
