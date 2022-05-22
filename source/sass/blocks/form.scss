@@ -215,9 +215,6 @@
   display: grid;
   place-content: center;
 
-  &:hover {
-    border: 1px solid #bababa;
-  }
 
   &::before {
     content: "";
@@ -245,9 +242,17 @@
     margin-bottom: 25px;
   }
 
+  @media (--desktop) {
+    margin-bottom: 27px;
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
   &:focus {
-    outline: max(2px, 0.15em) solid currentcolor;
-    outline-offset: max(2px, 0.15em);
+    outline: max(1px, 0.13em) solid currentcolor;
+    outline-offset: -3px;
 
     @supports selector(:focus-visible) {
       outline: none;
@@ -255,12 +260,13 @@
   }
 
   &:focus-visible {
-    outline: max(2px, 0.15em) solid currentcolor;
-    outline-offset: max(2px, 0.15em);
+    outline: max(1px, 0.15em) solid currentcolor;
+    outline-offset: -3px;
   }
 
-  @media (--desktop) {
-    margin-bottom: 27px;
+
+  &:disabled {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
@@ -328,21 +334,19 @@
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:focus-visible {
     outline: 2px solid #444444;
   }
 
-  &--error {
-    &:focus:invalid {
-      outline: -2px solid #ff8282;
-    }
+  &:not(:placeholder-shown):not(:focus):invalid {
+    outline: -2px solid #ff8282;
+  }
 
-    &:focus:invalid ~ span {
-      --fill: #ff8282;
-    }
+  &:focus:invalid ~ span {
+    --fill: #ff8282;
   }
 
 
@@ -468,6 +472,7 @@
   height: 150px;
   padding-top: 10px;
   padding-left: 15px;
+  border: 1px solid #e7e7e7;
 
   @media (--not-mobile) {
     height: 174px;
@@ -525,6 +530,9 @@
   grid-template-columns: 2em auto;
   gap: 19px;
   margin-bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  grid-auto-flow: column dense;
 }
 
 .form__checkbox {
@@ -564,6 +572,29 @@
 
   &:checked::before {
     transform: scale(1);
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:focus {
+    outline: max(1px, 0.13em) solid currentcolor;
+    outline-offset: -3px;
+
+    @supports selector(:focus-visible) {
+      outline: none;
+    }
+  }
+
+  &:focus-visible {
+    outline: max(1px, 0.15em) solid currentcolor;
+    outline-offset: -3px;
+  }
+
+
+  &:disabled {
+    color: rgba(0, 0, 0, 0.3);
   }
 }
 
