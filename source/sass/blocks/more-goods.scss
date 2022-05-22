@@ -22,14 +22,15 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
+  flex-wrap: wrap;
 
   @media (--not-mobile) {
-    width: auto;
+    width: 50%;
   }
 
   @media (--desktop) {
-    min-width: 300px;
-    white-space: nowrap;
+    max-width: 46%;
+    width: 100%;
   }
 }
 
@@ -48,10 +49,12 @@
     font-size: 20px;
     line-height: 20px;
     margin: 0;
+    max-width: 50%;
   }
 
   @media (--desktop) {
-    width: 25%;
+    max-width: 25%;
+    width: 100%;
     padding: 0;
     margin: 0;
   }
@@ -76,27 +79,35 @@
 }
 
 .more-goods__info {
-
+  max-width: 50%;
   text-align: left;
 
   @media (--not-mobile) {
     margin-right: 50px;
+    max-width: 46%;
   }
 
   @media (--desktop) {
+    max-width: 48%;
+    width: 100%;
     margin-right: 0;
-    margin-left: 41px;
+    margin-left: 0;
   }
 }
 
 .more-goods__value {
+  max-width: 48%;
   text-align: right;
 
   @media (--not-mobile) {
     text-align: right;
+    max-width: 38%;
   }
 
   @media (--desktop) {
-    width: 7%;
+    max-width: 40%;
+    width: 100%;
+    margin-right: 40px;
+    margin-left: auto;
   }
 }

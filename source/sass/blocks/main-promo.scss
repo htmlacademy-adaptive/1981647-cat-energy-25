@@ -94,8 +94,8 @@
 
 .main-promo__button-programs {
   @media (--not-mobile) {
-    width: 245px;
-    height: 52px;
+    max-width: 245px;
+    // height: 52px;
     top: 287px;
     left: 119px;
     padding: 14px 26px;

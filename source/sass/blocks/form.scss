@@ -248,6 +248,10 @@
   &:focus {
     outline: max(2px, 0.15em) solid currentcolor;
     outline-offset: max(2px, 0.15em);
+
+    @supports selector(:focus-visible) {
+      outline: none;
+    }
   }
 
   &:focus-visible {
@@ -257,12 +261,6 @@
 
   @media (--desktop) {
     margin-bottom: 27px;
-  }
-}
-
-@supports selector(:focus-visible) {
-  .form__radio:focus {
-    outline: none;
   }
 }
 
