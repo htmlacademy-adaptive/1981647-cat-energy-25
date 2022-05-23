@@ -73,6 +73,7 @@
   &--more {
     grid-template-columns: 1fr;
     align-items: center;
+    margin-bottom: 10px;
 
     @media (--not-mobile) {
       margin-top: 140px;
@@ -187,6 +188,7 @@
   font-size: 16px;
   line-height: 20px;
   margin-right: 64px;
+  margin-top: 20px;
   text-transform: uppercase;
 
   @media (--not-mobile) {
@@ -246,7 +248,7 @@
   display: block;
   width: 68px;
   height: 86px;
-  margin-top: 7px;
+  margin-top: 20px;
 
   @media (--not-mobile) {
     width: 161px;
