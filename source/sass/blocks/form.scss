@@ -14,6 +14,10 @@
   }
 }
 
+.form-profile {
+  padding-bottom: 30px;
+}
+
 .form__content-wrapper {
   @media (--not-mobile) {
     padding-left: 30px;
@@ -109,6 +113,8 @@
   }
 
   &--addons {
+    margin-bottom: 30px;
+
     @media (--desktop) {
       padding-top: 0;
       margin-bottom: 18px;
@@ -391,25 +397,23 @@
   }
 }
 
-.form__filter {
-  &--radio {
-    display: flex;
-    flex-direction: column;
-    border: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.form__filter-radio {
+  display: flex;
+  flex-direction: column;
+  border: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 
-    @media (--not-mobile) {
-      padding-top: 25px;
-      padding-bottom: 0;
-      margin-bottom: 45px;
-    }
+  @media (--not-mobile) {
+    padding-top: 25px;
+    padding-bottom: 0;
+    margin-bottom: 45px;
+  }
 
-    @media (--desktop) {
-      margin: 0;
-      padding: 0;
-      margin-bottom: 0;
-    }
+  @media (--desktop) {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
   }
 
   &--border {
@@ -437,6 +441,7 @@
   }
 }
 
+
 .form__filter-wrapper {
   @media (--not-mobile) {
     border: 1px solid #e7e7e7;
@@ -450,8 +455,6 @@
     margin-top: 13px;
     padding-left: 10px;
     padding-bottom: 30px;
-    // border-top: 1px solid #e7e7e7;
-    // border-bottom: 1px solid #e7e7e7;
 
     &:first-child {
       padding-top: 20px;
@@ -460,7 +463,7 @@
 }
 
 .form__comments {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 
   @media (--desktop) {
     margin-bottom: 50px;
