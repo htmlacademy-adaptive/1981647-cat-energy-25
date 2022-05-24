@@ -222,4 +222,14 @@
       width: 119px;
     }
   }
+
+  @media (--not-mobile) {
+    justify-content: space-between;
+    padding: 25px 29px 20px;
+  }
+
+  @media (--desktop) {
+    padding: 55px 35px 10px 43px;
+    width: 100%;
+  }
 }
