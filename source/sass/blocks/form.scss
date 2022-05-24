@@ -77,18 +77,14 @@
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    margin-top: 5px;
+    margin-top: 0;
     min-width: 630px;
-    // display: grid;
-    // margin-top: 20px;
   }
 
   @media (--desktop) {
     margin-top: 20px;
     flex-direction: row;
     justify-content: space-between;
-    // grid-template-columns: repeat(2, 570px);
-    // column-gap: 80px;
   }
 }
 
