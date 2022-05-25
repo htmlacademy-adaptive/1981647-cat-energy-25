@@ -10,7 +10,7 @@
   @media (--not-mobile) {
     flex-direction: row;
     justify-content: space-between;
-    padding: 15px 0;
+    padding: 20px 0;
   }
 
   @media (--desktop) {
@@ -41,9 +41,9 @@
   width: 128px;
   height: 24px;
   object-fit: cover;
-  padding-top: 34px;
+  padding-top: 28px;
   box-sizing: content-box;
-  padding-bottom: 31px;
+  padding-bottom: 25px;
 }
 
 .footer__copyright {

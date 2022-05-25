@@ -9,6 +9,7 @@
   @media (--not-mobile) {
     width: auto;
     flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 28px;
   }
 

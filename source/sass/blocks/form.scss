@@ -3,19 +3,25 @@
 
   @media (--not-mobile) {
     padding-inline: 70px;
-    padding-bottom: 15px;
+    padding-bottom: 5px;
   }
 
   @media (--desktop) {
     margin-inline: auto;
     width: 1220px;
-    padding-inline: 0;
+    padding-inline: 5px;
     padding-bottom: 25px;
   }
 }
 
 .form-profile {
-  padding-bottom: 30px;
+  @media (--not-mobile) {
+    padding-bottom: 10px;
+  }
+
+  @media (--desktop) {
+    padding-bottom: 25px;
+  }
 }
 
 .form__content-wrapper {
@@ -42,7 +48,7 @@
     justify-content: space-between;
     max-width: 1320px;
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -82,7 +88,7 @@
   }
 
   @media (--desktop) {
-    margin-top: 20px;
+    margin-top: 30px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -107,6 +113,7 @@
 
   @media (--desktop) {
     margin-bottom: 0;
+    padding-bottom: 20px;
   }
 
   &--comment {
@@ -142,21 +149,6 @@
   --line-color: #68b738;
   width: fit-content;
 
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   inset-block: calc((100% - 2px) / 2);
-  //   inset-inline-end: calc(100% + 20px);
-  //   block-size: 2px;
-  //   inline-size: calc(100vw - 100% - 20px);
-  //   background-color: var(--line-color);
-  //   box-shadow: calc(100vw + 20px) 0 0 0 var(--line-color);
-
-  //   @media (--not-mobile) {
-  //     left: calc(100% + 30px);
-  //   }
-  // }
-
   &::before {
     content: "";
     position: absolute;
@@ -169,8 +161,21 @@
 
     @media (--not-mobile) {
       top: 77%;
+      inline-size: calc(100vw - 100% - 43px);
     }
   }
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  appearance: textfield;
 }
 
 .form__label,
@@ -193,7 +198,7 @@
   display: flex;
   width: 100%;
   white-space: nowrap;
-  align-items: center;
+  align-items: baseline;
   position: relative;
   margin-bottom: 17px;
 
@@ -222,7 +227,6 @@
 
 .form__radio {
   appearance: none;
-  /* For iOS < 15 to remove gradient background */
   background-color: #ffffff;
   font: inherit;
   color: currentcolor;
@@ -340,7 +344,6 @@
   padding-bottom: 15px;
   width: 100%;
   margin-left: 15px;
-  transform: translateY(15%);
   height: 45px;
 
   @media (--not-mobile) {
@@ -352,6 +355,7 @@
 
   @media (--desktop) {
     margin-bottom: 20px;
+    padding-left: 20px;
   }
 
   &:hover {
@@ -366,7 +370,7 @@
     outline: -2px solid #ff8282;
   }
 
-  &:focus:invalid ~ span {
+  &:not(:placeholder-shown):not(:focus):invalid + span {
     --fill: #ff8282;
   }
 
@@ -374,7 +378,7 @@
   &--email,
   &--phone {
     @media (--not-mobile) {
-      margin-left: 18px;
+      margin-left: 23px;
     }
   }
 }
@@ -402,7 +406,7 @@
     content: "";
     position: absolute;
     display: inline-block;
-    top: 33%;
+    top: 27%;
     right: 15px;
     width: 20px;
     height: 20px;
@@ -423,7 +427,6 @@
   margin-left: calc(20px * -1);
   margin-right: calc(20px * -1);
   margin-bottom: 25px;
-  // padding-bottom: 0;
 
   @media (--not-mobile) {
     padding-top: 0;
@@ -436,7 +439,7 @@
 
   @media (--desktop) {
     margin: 0;
-    padding: 0 0 0 62px;
+    padding: 0 0 0 72px;
     margin-bottom: 0;
     border: none;
     width: 47%;
@@ -518,10 +521,16 @@
     padding-left: 20px;
     min-height: auto;
   }
-}
 
-.form__add-ons {
-  margin-bottom: 0;
+  &:hover {
+    outline: 1px solid #cdcdcd;
+    outline-offset: -1px;
+  }
+
+  &:focus-visible {
+    outline: 2px solid #444444;
+    outline-offset: -2px;
+  }
 }
 
 .form__addons-list {
@@ -540,8 +549,7 @@
 
   @media (--desktop) {
     grid-template-columns: repeat(4, 245px);
-    row-gap: 40px;
-    column-gap: 83px;
+    column-gap: 80px;
     margin-bottom: 40px;
   }
 }

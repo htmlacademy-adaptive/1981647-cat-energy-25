@@ -66,6 +66,7 @@
   min-width: 320px;
   border: none;
   height: 362px;
+  object-fit: cover;
 
   @media (--not-mobile) {
     min-height: 400px;

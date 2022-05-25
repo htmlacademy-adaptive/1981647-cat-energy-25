@@ -1,6 +1,10 @@
 .goods {
   padding-bottom: 20px;
 
+  @media (--not-mobile) {
+    padding-bottom: 10px;
+  }
+
   @media (--desktop) {
     display: flex;
     flex-wrap: wrap;
