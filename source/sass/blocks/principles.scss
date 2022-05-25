@@ -114,35 +114,34 @@
     position: absolute;
     width: 60px;
     height: 60px;
-    top: 13;
+    top: 13px;
     left: 0;
+    background: var(--accent-color) var(--icon) no-repeat center / 40px;
 
     @media (--not-mobile) {
       top: 42px;
-      left: 0;
       width: 80px;
       height: 80px;
     }
 
     @media (--desktop) {
       top: 40px;
-      left: 0;
     }
   }
 }
 
 .principles__item--greens::before {
-  background-image: url("../../icons/sprite.svg#leaf");
+  --icon: url("../../icons/sprite.svg#leaf");
 }
 
 .principles__item--solutable::before {
-  background-image: url("../../icons/sprite.svg#glass");
+  --icon: url("../../icons/sprite.svg#glass");
 }
 
 .principles__item--eat::before {
-  background-image: url("../../icons/sprite.svg#eat");
+  --icon: url("../../icons/sprite.svg#eat");
 }
 
 .principles__item--clock::before {
-  background-image: url("../../icons/sprite.svg#alarm");
+  --icon: url("../../icons/sprite.svg#alarm");
 }

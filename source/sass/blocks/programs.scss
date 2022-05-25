@@ -200,7 +200,7 @@
   text-decoration: none;
   text-transform: uppercase;
   margin-top: 14px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 15px;
 
@@ -224,21 +224,21 @@
   &:active {
     opacity: 0.3;
   }
-}
 
-.programs__link--arrow {
-  &::after {
-    content: "";
-    background-image: url("../../icons/sprite.svg#arrow-long");
-    background-size: cover;
-    width: 32px;
-    height: 24px;
-    transition: all 0.1s linear;
-    background-repeat: no-repeat;
-    background-position-x: -8px;
-  }
+  &--arrow {
+    --arrow-length: 24px;
 
-  &:hover::after {
-    background-position-x: 0;
+    &::after {
+      content: "";
+      width: 32px;
+      height: 12px;
+      transition: all 0.1s linear;
+      background: url("../../icons/sprite.svg#arrow") no-repeat calc(var(--arrow-length) - 32px) / cover;
+    }
+
+    &:hover::after {
+      --arrow-length: 32px;
+      // background-position-x: 0;
+    }
   }
 }

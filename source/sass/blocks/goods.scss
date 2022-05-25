@@ -51,26 +51,6 @@
     padding-left: 0;
   }
 
-  // &::after {
-  //   content: "";
-  //   top: 68px;
-  //   position: absolute;
-  //   background-color: var(--line-color);
-  //   left: calc(100% + var(--air-gap));
-  //   width: calc(100vh - 100% - var(--air-gap));
-  //   height: 2px;
-  //   box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
-
-  //   @media (--not-mobile) {
-  //     // box-shadow: calc(100vw - var(--air-gap)) 0 0 0 var(--line-color);
-  //     // left: calc(100% + 1px);
-  //     // width: 100vw;
-  //     // height: 2px;
-  //     width: calc(100vh + 100% - var(--air-gap));
-  //     top: 94px;
-  //   }
-  // }
-
   &::before {
     content: "";
     position: absolute;
@@ -93,25 +73,6 @@
       top: 80%;
     }
   }
-
-  // &::before {
-  //   content: "";
-  //   top: 68px;
-  //   position: absolute;
-  //   background-color: var(--line-color);
-  //   left: calc(100% - var(--air-gap));
-  //   width: calc(100vh - 100% - var(--air-gap));
-  //   height: 2px;
-  //   box-shadow: calc(100vw + var(--air-gap)) 0 0 0 var(--line-color);
-
-  //   @media (--not-mobile) {
-  //     background-color: #68b738;
-  //     top: 94px;
-  //     width: 100vw;
-  //     height: 2px;
-  //     right: calc(100% - 10px);
-  //   }
-  // }
 }
 
 .goods__list {

@@ -14,16 +14,6 @@
   }
 }
 
-.form-profile {
-  @media (--not-mobile) {
-    padding-bottom: 10px;
-  }
-
-  @media (--desktop) {
-    padding-bottom: 25px;
-  }
-}
-
 .form__content-wrapper {
   @media (--not-mobile) {
     padding-left: 30px;
@@ -586,7 +576,7 @@ input[type="number"] {
   width: 30px;
   height: 30px;
   border: 1px solid var(--form-control-color);
-  display: grid;
+  display: flex;
   place-content: center;
 
   @media (--not-mobile) {
@@ -594,25 +584,8 @@ input[type="number"] {
     height: 40px;
   }
 
-  &::before {
-    content: "";
-    width: 18px;
-    height: 14px;
-    transform: scale(0);
-    transition: 120ms transform ease-in-out;
-    box-shadow: inset 1em 1em var(--accent-color);
-    background-color: #68b738;
-    transform-origin: bottom left;
-    clip-path: polygon(10% 36%, 0% 43%, 47% 107%, 71% 68%, 107% 0%, 45% 93%);
-
-    @media (--not-mobile) {
-      width: 24px;
-      height: 19px;
-    }
-  }
-
-  &:checked::before {
-    transform: scale(1);
+  &:checked {
+    --is-checked: 1;
   }
 
   &:hover {
@@ -620,8 +593,8 @@ input[type="number"] {
   }
 
   &:focus {
-    outline: max(1px, 0.13em) solid currentcolor;
-    outline-offset: -3px;
+    outline: 2px solid currentcolor;
+    outline-offset: -2px;
 
     @supports selector(:focus-visible) {
       outline: none;
@@ -629,13 +602,24 @@ input[type="number"] {
   }
 
   &:focus-visible {
-    outline: max(1px, 0.15em) solid currentcolor;
-    outline-offset: -3px;
+    outline: 2px solid currentcolor;
+    outline-offset: -2px;
   }
 
 
   &:disabled {
     color: rgba(0, 0, 0, 0.3);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    transform: scale(var(--is-checked, 0));
+    transition: 120ms transform ease-in-out;
+    transform-origin: bottom left;
+    background: url("../../icons/sprite.svg#tick") no-repeat center / cover;
   }
 }
 

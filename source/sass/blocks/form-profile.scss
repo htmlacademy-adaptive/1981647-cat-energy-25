@@ -1,0 +1,9 @@
+.form-profile {
+  @media (--not-mobile) {
+    padding-bottom: 10px;
+  }
+
+  @media (--desktop) {
+    padding-bottom: 25px;
+  }
+}

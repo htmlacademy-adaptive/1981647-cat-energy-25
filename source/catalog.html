@@ -4,7 +4,7 @@
 
 {% block main %}
 <main class="catalog-content catalog">
-  <div class="catalog-wrapper page__centerer">
+  <div class="catalog__wrapper page__centerer">
     {# <div class="page__centerer"> #}
       <h1 class="catalog-content__title">Каталог продукции</h1>
       <ul class="catalog__list">
@@ -39,7 +39,7 @@
           <div class="catalog__container">
             <div class="catalog__product-photo">
               <a href="#" class="catalog__link">
-                {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image--big"} %}
+                {% include "./templates/picture.twig" with {name: "products/chicken-big", class: "catalog__image catalog__image--big"} %}
               </a>
             </div>
             <div class="catalog__product-info">
@@ -95,7 +95,7 @@
           <div class="catalog__container">
             <div class="catalog__product-photo">
               <a href="#" class="catalog__link">
-                {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image--big"} %}
+                {% include "./templates/picture.twig" with {name: "products/fish-big", class: "catalog__image catalog__image--big"} %}
               </a>
             </div>
             <div class="catalog__product-info">
@@ -151,7 +151,7 @@
           <div class="catalog__container">
             <div class="catalog__product-photo">
               <a href="#" class="catalog__link">
-                {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image--big"} %}
+                {% include "./templates/picture.twig" with {name: "products/buckweat-big", class: "catalog__image catalog__image--big"} %}
               </a>
             </div>
             <div class="catalog__product-info">
