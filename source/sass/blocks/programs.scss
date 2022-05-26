@@ -43,7 +43,7 @@
 
   @media (--desktop) {
     min-width: 467px;
-    padding-left: 59px;
+    padding-left: 50px;
   }
 
   &--weight-gain {
@@ -84,8 +84,8 @@
       height: 106px;
       background-size: 100px 106px;
       float: left;
-      margin-left: 10px;
-      margin-top: 10px;
+      margin-left: 1px;
+      margin-top: 7px;
     }
   }
 
@@ -111,8 +111,8 @@
       height: 135px;
       background-size: 157px 135px;
       float: left;
-      margin-left: 0;
-      margin-top: -7px;
+      margin-left: -5px;
+      margin-top: -4px;
     }
   }
 }
@@ -126,7 +126,7 @@
   text-transform: uppercase;
   margin-left: 71px;
   margin-top: 32px;
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 
   @media (--not-mobile) {
     font-size: var(--title-fs);
@@ -155,9 +155,9 @@
     }
 
     @media (--desktop) {
-      padding-left: 194px;
+      padding-left: 187px;
       padding-bottom: 0;
-      margin-bottom: 68px;
+      margin-bottom: 70px;
       padding-top: 45px;
     }
   }
@@ -186,7 +186,7 @@
 
   &--weight {
     @media (--desktop) {
-      padding-left: 30px;
+      padding-left: 25px;
     }
   }
 }
@@ -199,7 +199,7 @@
   color: var(--primary-color);
   text-decoration: none;
   text-transform: uppercase;
-  margin-top: 14px;
+  margin-top: 20px;
   display: inline-flex;
   align-items: center;
   gap: 15px;
@@ -217,7 +217,7 @@
 
   &--weight {
     @media (--desktop) {
-      padding-left: 30px;
+      padding-left: 26px;
     }
   }
 

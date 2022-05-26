@@ -6,13 +6,14 @@
   @media (--not-mobile) {
     position: relative;
     min-width: 708px;
-    padding-left: 92px;
     align-items: flex-start;
     min-height: 800px;
+    padding-left: 87px;
   }
 
   @media (--desktop) {
     min-height: 595px;
+    padding-left: 80px;
   }
 }
 
@@ -60,6 +61,10 @@
     color: var(--primary-color);
     margin-bottom: 50px;
   }
+
+  @media (--desktop) {
+    margin-bottom: 55px;
+  }
 }
 
 .main-promo__banner-product {
@@ -67,14 +72,14 @@
     position: absolute;
     width: 709px;
     height: 609px;
-    left: 6px;
+    left: 0;
     bottom: -58px;
     z-index: -1;
   }
 
   @media (--desktop) {
-    top: 9px;
-    left: 465px;
+    top: 17px;
+    left: 448px;
     width: 552px;
     height: 499px;
   }

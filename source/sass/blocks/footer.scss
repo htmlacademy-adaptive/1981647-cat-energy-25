@@ -21,9 +21,10 @@
 .footer__logo {
   text-decoration: none;
   display: block;
+  padding-bottom: 8px;
 
   @media (--not-mobile) {
-    padding-top: 10px;
+    padding-top: 15px;
     padding-bottom: 20px;
   }
 
@@ -41,7 +42,7 @@
   width: 128px;
   height: 24px;
   object-fit: cover;
-  padding-top: 28px;
+  padding-top: 30px;
   box-sizing: content-box;
   padding-bottom: 25px;
 }

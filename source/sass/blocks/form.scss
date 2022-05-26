@@ -225,7 +225,6 @@ input[type="number"] {
   border: 1px solid var(--form-control-color);
   border-radius: 50%;
   margin-bottom: 18px;
-  transform: translateY(15%);
   display: grid;
   place-content: center;
 
@@ -331,9 +330,8 @@ input[type="number"] {
   border: 1px solid #e7e7ee;
   padding-top: 0;
   padding-left: 15px;
-  padding-bottom: 15px;
   width: 100%;
-  margin-left: 15px;
+  margin-left: 10px;
   height: 45px;
 
   @media (--not-mobile) {
@@ -499,6 +497,7 @@ input[type="number"] {
   padding-top: 10px;
   padding-left: 15px;
   border: 1px solid #e7e7e7;
+  resize: vertical;
 
   @media (--not-mobile) {
     height: 174px;
@@ -523,31 +522,38 @@ input[type="number"] {
   }
 }
 
+.form__addons {
+  margin-bottom: 30px;
+
+  @media (--desktop) {
+    margin-bottom: 0;
+  }
+}
+
 .form__addons-list {
   list-style: none;
   padding: 0;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 
   @media (--not-mobile) {
     display: grid;
     grid-template-columns: repeat(2, minmax(285px, 500px));
     row-gap: 20px;
     column-gap: 60px;
-    margin-bottom: 35px;
+    margin-bottom: 40px;
   }
 
   @media (--desktop) {
     grid-template-columns: repeat(4, 245px);
     column-gap: 80px;
-    margin-bottom: 40px;
   }
 }
 
 .form__addons-item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .form__icon-required {
@@ -559,11 +565,12 @@ input[type="number"] {
 .form__label-checkbox {
   display: grid;
   grid-template-columns: 2em auto;
-  gap: 19px;
+  gap: 15px;
   margin-bottom: 0;
   max-width: 100%;
   overflow: hidden;
   grid-auto-flow: column dense;
+  align-items: center;
 }
 
 .form__checkbox {

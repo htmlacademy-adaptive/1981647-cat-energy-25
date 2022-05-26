@@ -3,6 +3,7 @@ let mainHeader = document.querySelector('.main-header');
 let navToggle = document.querySelector('.main-nav__toggle');
 
 mainHeader.classList.remove('main-header--no-js');
+navMain.classList.add('main-nav--closed');
 
 navToggle.addEventListener('click', function () {
   if (navMain.classList.contains('main-nav--closed')) {
