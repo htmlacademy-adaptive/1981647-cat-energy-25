@@ -1,5 +1,5 @@
 {% set image = images[name] %}
-{% set formats = isDevelopment? [image.ext]: ["webp", image.ext] %}
+{% set formats = ["webp", image.ext] %}
 {% set densities = range(1, image.maxdppx, 1) %}
 <picture>
   {% for format in formats -%}

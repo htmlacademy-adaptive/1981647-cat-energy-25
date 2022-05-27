@@ -73,14 +73,10 @@ export function copyImages () {
     .pipe(dest("build/img"))
 }
 
-export function createWebp (done) {
-  if (!data.isDevelopment) {
-    return src("./source/img/**/*.{jpg,png}")
-      .pipe(squoosh({ webp: {}}))
-      .pipe(dest("./build/img"))
-  } else {
-    done()
-  }
+export function createWebp () {
+  return src("./source/img/**/*.{jpg,png}")
+    .pipe(squoosh({ webp: {}}))
+    .pipe(dest("./build/img"))
 }
 
 export function createSprite () {
